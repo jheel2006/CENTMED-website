@@ -1,0 +1,74 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0.5rem 2rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Left side: Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    /* Vertically center text inside the container */
+    justify-content: flex-start;
+    /* Align to the left */
+    margin: 0;
+    padding: 0;
+}
+
+.logo-text {
+    color: #56018d;
+    /* Purple color for logo */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Right side: Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+    /* Space between links */
+}
+
+/* Navigation items */
+.nav-item {
+    color: #56018d;
+    /* Purple color for text */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: relative;
+    /* Ensure underline stays under individual words */
+    padding-bottom: 4px;
+    /* Space for underline effect */
+}
+
+/* Underline effect */
+.nav-item::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #006f6a;
+    /* Teal underline */
+    transition: width 0.3s ease-out, transform 0.3s ease-out;
+    transform: translateX(-50%);
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+/* Hover effect: underline expands from center */
+.nav-item:hover::after {
+    width: 100%;
+    transform: translateX(-50%);
+}
