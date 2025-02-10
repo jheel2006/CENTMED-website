@@ -7,12 +7,12 @@ const Navbar = () => {
         <nav className="navbar">
             {/* Left side: Logo */}
             <div className="logo">
-                <h1 className="logo-text">Your Logo</h1> {/* Placeholder Logo */}
+                <Link to="/" className="logo-text">Your Logo</Link> {/* Placeholder Logo */}
             </div>
 
             {/* Right side: Navigation Items */}
             <div className="nav-links">
-                <Link to="/" className="nav-item">Home</Link>
+                {/* <Link to="/" className="nav-item">Home</Link> */}
                 <Link to="/research" className="nav-item">Research Areas and Projects</Link>
                 <Link to="/researchers" className="nav-item">Researchers</Link>
                 <Link to="/publications" className="nav-item">Publications</Link>
