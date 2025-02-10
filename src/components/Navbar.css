@@ -65,6 +65,7 @@
 
 .nav-item:hover {
     cursor: pointer;
+    color: #56018d;
 }
 
 /* Hover effect: underline expands from center */
