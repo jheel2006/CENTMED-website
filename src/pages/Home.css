@@ -5,7 +5,7 @@
     flex-direction: column;
 }
 
-.title-section {
+.home-title-section {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -14,12 +14,12 @@
     transition: all 0.5s ease-in-out;
 }
 
-.title-section h1 {
+.home-title-section h1 {
     font-size: 3rem;
     text-align: center;
 }
 
-.content-section {
+.home-content-section {
     width: 40%;
     padding: 5vh 10vw;
     font-size: 1.2rem;

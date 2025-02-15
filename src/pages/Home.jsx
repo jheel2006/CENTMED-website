@@ -25,10 +25,10 @@ const Home = () => {
 
     return (
         <div className="home-container">
-            <div className="title-section" ref={titleRef}>
+            <div className="home-title-section" ref={titleRef}>
                 <h1>Center for Translational Medical Devices</h1>
             </div>
-            <div className={`content-section ${contentVisible ? "fade-in" : "fade-out"}`}>
+            <div className={`home-content-section ${contentVisible ? "fade-in" : "fade-out"}`}>
                 <p>
                     The objective of CENTMED is to catalyze translational research collaborations
                     between researchers at NYUAD and clinicians at medical centres in Abu Dhabi
