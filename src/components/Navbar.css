@@ -5,10 +5,13 @@
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    padding: 0.5rem 2rem;
+    padding: 0.1rem 2rem;
     top: 0;
     left: 0;
     width: 100%;
+    background-color: white;
+    z-index: 1000;
+
 }
 
 /* Left side: Logo */

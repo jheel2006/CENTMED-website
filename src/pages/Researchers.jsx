@@ -17,7 +17,7 @@ const Researchers = () => {
             <div className="researchers-grid">
                 {researchers.map((researcher, index) => (
                     <div key={index} className="researcher-card">
-                        <img src="https://via.placeholder.com/150" alt="Researcher" className="researcher-image" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="Researcher" className="researcher-image" />
                         <div className="researcher-info">
                             <h3>{researcher.name}</h3>
                             <p className="researcher-title">{researcher.title}</p>
