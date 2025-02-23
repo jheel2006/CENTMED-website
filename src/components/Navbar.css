@@ -26,7 +26,7 @@
 }
 
 .logo-text {
-    color: #56018d;
+    color: var(--purple);
     /* Purple color for logo */
     font-size: 1.5rem;
     font-weight: bold;
@@ -41,7 +41,7 @@
 
 /* Navigation items */
 .nav-item {
-    color: #56018d;
+    color: var(--purple);
     /* Purple color for text */
     text-decoration: none;
     font-size: 1.2rem;
@@ -60,7 +60,7 @@
     bottom: 0;
     width: 0%;
     height: 2px;
-    background-color: #006f6a;
+    background-color: var(--teal);
     /* Teal underline */
     transition: width 0.3s ease-out, transform 0.3s ease-out;
     transform: translateX(-50%);
@@ -68,7 +68,7 @@
 
 .nav-item:hover {
     cursor: pointer;
-    color: #56018d;
+    color: var(--purple);
 }
 
 /* Hover effect: underline expands from center */

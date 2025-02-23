@@ -4,15 +4,15 @@ import "./Research.css";
 const Research = () => {
     const clusters = [
         {
-            title: "Metabolic Disorders",
+            title: "Metabolic",
             description: "Addressing metabolic non-communicable diseases such as obesity and diabetes through novel medical devices.",
         },
         {
-            title: "Cardiovascular Disorders",
+            title: "Cardiovascular",
             description: "Developing solutions for cardiovascular diseases, a major health concern in Abu Dhabi.",
         },
         {
-            title: "Neurological Disorders",
+            title: "Neurological",
             description: "Focusing on the rising prevalence of neurologic disorders through innovative medical devices.",
         },
     ];

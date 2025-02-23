@@ -6,10 +6,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Ma
 import Navbar from './components/Navbar.jsx';  // Import Navbar Component
 import Home from "./pages/Home.jsx";
 import Research from "./pages/Research.jsx";
-import Researchers from "./pages/Researchers.jsx";
+import People from "./pages/People.jsx";
 import Publications from "./pages/Publications.jsx";
-import Leadership from "./pages/Leadership.jsx";
-import NewsEvents from "./pages/NewsEvents.jsx";
+import News from "./pages/News.jsx";
+import Events from "./pages/Events.jsx";
+import Careers from "./pages/Careers.jsx";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,10 +21,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/research" element={<Research />} />
-        <Route path="/researchers" element={<Researchers />} />
+        <Route path="/people" element={<People />} />
         <Route path="/publications" element={<Publications />} />
-        <Route path="/leadership" element={<Leadership />} />
-        <Route path="/news-events" element={<NewsEvents />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/careers" element={<Careers />} />
       </Routes>
     </Router>
   )

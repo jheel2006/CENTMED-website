@@ -13,11 +13,12 @@ const Navbar = () => {
             {/* Right side: Navigation Items */}
             <div className="nav-links">
                 {/* <Link to="/" className="nav-item">Home</Link> */}
-                <Link to="/research" className="nav-item">Research Areas and Projects</Link>
-                <Link to="/researchers" className="nav-item">Researchers</Link>
+                <Link to="/research" className="nav-item">Research</Link>
+                <Link to="/people" className="nav-item">People</Link>
                 <Link to="/publications" className="nav-item">Publications</Link>
-                <Link to="/leadership" className="nav-item">Leadership</Link>
-                <Link to="/news-events" className="nav-item">News & Events</Link>
+                <Link to="/news" className="nav-item">News</Link>
+                <Link to="/events" className="nav-item">Events</Link>
+                <Link to="/careers" className="nav-item">Careers</Link>
             </div>
         </nav>
     );
