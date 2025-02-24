@@ -1,7 +1,11 @@
-.research-container {
+/* .research-container {
     width: 80%;
     margin: auto;
     text-align: center;
+}
+
+.research-container h1 {
+    margin-top: 0;
 }
 
 .research-grid {
@@ -38,4 +42,145 @@
     margin-top: 30px;
     font-size: 1.1rem;
     color: #555;
+} */
+
+/* Container Styling */
+.research-container {
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+/* Title Styling */
+.research-title {
+    font-weight: bold;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+    /* Ensures the underline is centered on the text width */
+}
+
+.research-title::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    /* Adjust the distance from the text */
+    left: 50%;
+    width: 200px;
+    /* Adjust the length of the underline */
+    height: 4px;
+    /* Adjust the thickness of the underline */
+    background-color: var(--teal);
+    transform: translateX(-50%);
+    /* Centers the underline */
+    border-radius: 2px;
+    /* Optional: adds rounded edges */
+}
+
+
+.research-description {
+    max-width: 950px;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: left;
+}
+
+
+/* Grid Layout */
+.research-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+/* Research Cards */
+.research-card {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 17px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* Overlay and Cluster Title */
+.research-card::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    /* Start at the bottom of the card */
+    left: 0;
+    width: 100%;
+    height: 30%;
+    /* Initially small overlay at the bottom */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark background for overlay */
+    transition: height 0.5s ease, bottom 0.5s ease;
+    /* Animate the height and bottom properties */
+}
+
+/* Cluster Name */
+.research-card-title {
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    /* Center horizontally */
+    bottom: 26px;
+    /* Initially at the bottom */
+    transition: bottom 0.5s ease, transform 0.5s ease;
+}
+
+.research-card:hover {
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.research-card:hover::before {
+    height: 100%;
+    /* Overlay expands to cover the entire card */
+    bottom: 0;
+    /* Overlay moves upwards */
+}
+
+.research-card:hover .research-card-title {
+    bottom: 50%;
+    /* Cluster name moves to the center */
+    transform: translateY(50%);
+    /* Center it vertically */
+}
+
+/* Arrow next to the title on hover */
+.research-card-title::after {
+    content: "→";
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 10px;
+    position: absolute;
+    right: -28px;
+    /* Position it outside the text area */
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    /* Prevent it from affecting layout */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Show the arrow when the card is hovered */
+.research-card:hover .research-card-title::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) translateX(5px);
+    /* Slight movement effect */
 }

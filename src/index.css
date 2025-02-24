@@ -3,6 +3,7 @@
 :root {
   --purple: #57068c;
   --teal: #008ba9;
+  --background: #fcf8ff;
 
 
   font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -35,6 +36,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--background);
 }
 
 h1 {
