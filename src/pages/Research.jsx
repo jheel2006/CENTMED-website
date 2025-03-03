@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "./Research.css";
 import ScrollProgress from "../components/ScrollProgress.jsx";
 
-const Research = () => {
+const Research = ({ isLoading }) => {
     const clusters = [
         {
             title: "Metabolic Cluster",
@@ -36,12 +36,17 @@ const Research = () => {
                         key={index}
                         className="research-card"
                         style={{ backgroundImage: `url(${cluster.image})` }}
-                        initial={{ x: "100vw", opacity: 0 }} // Start off-screen to the right
-                        animate={{ x: 0, opacity: 1 }} // Move to original position
-                        transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
+                        initial={isLoading ? { x: "100vw", opacity: 0 } : { x: 0, opacity: 1 }} // Stay off-screen when loading
+                        animate={isLoading ? { x: "100vw", opacity: 0 } : { x: 0, opacity: 1 }} // Only animate when loading is false
+                        transition={{
+                            duration: 0.6,
+                            delay: isLoading ? 0 : index * 0.2, // Delay the animation until loading is complete
+                            ease: "easeOut"
+                        }}
                     >
                         <div className="research-card-title">{cluster.title}</div>
                     </motion.div>
+
 
 
 
