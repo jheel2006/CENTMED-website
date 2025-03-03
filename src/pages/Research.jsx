@@ -48,7 +48,7 @@ const Research = () => {
                         initial={{ opacity: 0, y: 50 }} // Start hidden and slightly below
                         whileInView={{ opacity: 1, y: 0 }} // Animate when in view
                         viewport={{ once: true, amount: 0.2 }} // Ensures animation triggers once when 20% visible
-                        transition={{ duration: 0.2, delay: index * 0.2, ease: "easeOut" }}
+                        transition={{ duration: 0.2, delay: index * 0.1, ease: "easeOut" }}
                     >
                         <div className="research-card-title">{cluster.title}</div>
                     </motion.div>
