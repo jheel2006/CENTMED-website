@@ -1,5 +1,6 @@
 import React from "react";
 import "./People.css";
+import ScrollProgress from "../components/ScrollProgress.jsx";
 
 const people = [
     { name: "Dr. John Doe", title: "Principal Investigator", description: "Expert in biomedical engineering and translational research." },
@@ -13,6 +14,7 @@ const people = [
 const People = () => {
     return (
         <div className="people-container">
+            <ScrollProgress />
             <h1 className="people-title">people / PIs</h1>
             <div className="people-grid">
                 {people.map((researcher, index) => (

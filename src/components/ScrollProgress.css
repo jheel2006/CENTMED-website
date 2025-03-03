@@ -1,0 +1,25 @@
+.scroll-progress-container {
+    position: fixed;
+    top: 35vh;
+    left: 7%;
+    width: 8px;
+    height: 30vh;
+    background-color: var(--teal);
+    border-radius: 10px;
+    z-index: 999;
+    overflow: hidden;
+    /* Prevents any visual overflow */
+    display: flex;
+    align-items: flex-start;
+    /* Ensures the bar grows from the top */
+}
+
+.scroll-progress-bar {
+    width: 100%;
+    height: 0;
+    background-color: var(--purple);
+    transform-origin: top;
+    border-radius: 10px;
+    will-change: height;
+    /* Optimizes animations for smoother transitions */
+}

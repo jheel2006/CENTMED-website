@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Research.css";
+import ScrollProgress from "../components/ScrollProgress.jsx";
 
 const Research = () => {
     const clusters = [
@@ -20,6 +21,7 @@ const Research = () => {
 
     return (
         <div className="research-container">
+            <ScrollProgress />
             <h1 className="research-title">Research Clusters</h1>
             <p className="research-description">
                 The center has three disease focus areas: <strong>1) metabolic</strong>, <strong>2) cardiovascular</strong>, and <strong>3) neurological disorders</strong>.
@@ -34,12 +36,15 @@ const Research = () => {
                         key={index}
                         className="research-card"
                         style={{ backgroundImage: `url(${cluster.image})` }}
-                        initial={{ x: "-100vw", opacity: 0 }}
-                        animate={{ x: 0, opacity: 1 }}
-                        transition={{ duration: 0.8, delay: index * 0.2, ease: "easeOut" }}
+                        initial={{ x: "100vw", opacity: 0 }} // Start off-screen to the right
+                        animate={{ x: 0, opacity: 1 }} // Move to original position
+                        transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
                     >
                         <div className="research-card-title">{cluster.title}</div>
                     </motion.div>
+
+
+
                 ))}
             </div>
         </div>

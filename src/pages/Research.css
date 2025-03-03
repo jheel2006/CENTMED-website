@@ -10,7 +10,7 @@
 /* Title Styling */
 .research-title {
     font-weight: bold;
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-bottom: 3rem;
     position: relative;
     display: inline-block;
@@ -37,7 +37,7 @@
 
 .research-description {
     max-width: 950px;
-    margin: 0 auto 3rem;
+    margin: 0 auto 2.5rem;
     font-size: 1.1rem;
     line-height: 1.6;
     color: #333;
@@ -45,13 +45,18 @@
 }
 
 
-/* Grid Layout */
+/* Reserve space for animation to prevent shifting */
 .research-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 35px;
+
+    /* Ensures height is allocated early */
 }
+
+
+
 
 /* Research Cards */
 .research-card {
