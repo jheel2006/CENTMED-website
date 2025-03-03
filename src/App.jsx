@@ -17,35 +17,30 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Ensure the loading screen is removed completely after 3 seconds
+    // Ensure the loading screen stays visible for at least 3 seconds
+    const minLoadTime = 3000;
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, minLoadTime);
 
-    return () => clearTimeout(timer);
+    return () => clearTimeout(timer); // Cleanup timeout if component unmounts
   }, []);
 
-  return (
-    <>
-      {/* Only render the LoadingScreen when isLoading is true */}
-      {isLoading && <LoadingScreen />}
-
-      {/* Always render the Router and app content, but conditionally hide it */}
-      <div style={{ display: isLoading ? 'none' : 'block' }}>
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/research" element={<Research isLoading={isLoading} />} />
-            <Route path="/people" element={<People />} />
-            <Route path="/publications" element={<Publications />} />
-            <Route path="/news" element={<News />} />
-            <Route path="/events" element={<Events />} />
-            <Route path="/careers" element={<Careers />} />
-          </Routes>
-        </Router>
-      </div>
-    </>
+  return isLoading ? (
+    <LoadingScreen />
+  ) : (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/research" element={<Research />} />
+        <Route path="/people" element={<People />} />
+        <Route path="/publications" element={<Publications />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/careers" element={<Careers />} />
+      </Routes>
+    </Router>
   );
 }
 

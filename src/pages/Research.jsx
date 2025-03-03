@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom"; // Import useLocation
 import "./Research.css";
 import ScrollProgress from "../components/ScrollProgress.jsx";
 
-const Research = ({ isLoading }) => {
+const Research = () => {
+    const location = useLocation(); // Get current page location
+    const [triggerAnimation, setTriggerAnimation] = useState(false);
+
+    useEffect(() => {
+        setTriggerAnimation(false); // Reset animation before triggering
+        setTimeout(() => setTriggerAnimation(true), 50); // Small delay ensures animation resets properly
+    }, [location.pathname]); // Re-run animation whenever location changes
+
     const clusters = [
         {
             title: "Metabolic Cluster",
@@ -36,20 +45,13 @@ const Research = ({ isLoading }) => {
                         key={index}
                         className="research-card"
                         style={{ backgroundImage: `url(${cluster.image})` }}
-                        initial={isLoading ? { x: "100vw", opacity: 0 } : { x: 0, opacity: 1 }} // Stay off-screen when loading
-                        animate={isLoading ? { x: "100vw", opacity: 0 } : { x: 0, opacity: 1 }} // Only animate when loading is false
-                        transition={{
-                            duration: 0.6,
-                            delay: isLoading ? 0 : index * 0.2, // Delay the animation until loading is complete
-                            ease: "easeOut"
-                        }}
+                        initial={{ opacity: 0, y: 50 }} // Start hidden and slightly below
+                        whileInView={{ opacity: 1, y: 0 }} // Animate when in view
+                        viewport={{ once: true, amount: 0.2 }} // Ensures animation triggers once when 20% visible
+                        transition={{ duration: 0.2, delay: index * 0.2, ease: "easeOut" }}
                     >
                         <div className="research-card-title">{cluster.title}</div>
                     </motion.div>
-
-
-
-
                 ))}
             </div>
         </div>
