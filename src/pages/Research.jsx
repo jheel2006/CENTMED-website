@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom"; // Import useLocation
 import "./Research.css";
 import ScrollProgress from "../components/ScrollProgress.jsx";
+import metabolicImage from "../assets/metabolic_image.webp";
+import cardiovascularImage from "../assets/cardiovascular_image.jpg";
+import neurologicalImage from "../assets/neurological_image.jpg";
 
 const Research = () => {
     const location = useLocation(); // Get current page location
@@ -16,15 +19,15 @@ const Research = () => {
     const clusters = [
         {
             title: "Metabolic Cluster",
-            image: "https://www.vai.org/wp-content/uploads/2022/06/Metabolism-banner-01.png",
+            image: metabolicImage,
         },
         {
             title: "Cardiovascular Cluster",
-            image: "https://www.monash.edu/__data/assets/image/0003/3303804/Banner-final.jpg",
+            image: cardiovascularImage,
         },
         {
             title: "Neurological Cluster",
-            image: "https://lilavatihospital.com/uploads/home_banner/InnerBanner-1026-0995-2208.jpg",
+            image: neurologicalImage,
         },
     ];
 
@@ -48,7 +51,7 @@ const Research = () => {
                         initial={{ opacity: 0, y: 50 }} // Start hidden and slightly below
                         whileInView={{ opacity: 1, y: 0 }} // Animate when in view
                         viewport={{ once: true, amount: 0.2 }} // Ensures animation triggers once when 20% visible
-                        transition={{ duration: 0.2, delay: index * 0.1, ease: "easeOut" }}
+                        transition={{ duration: 0.3, delay: index * 0.1, ease: "easeOut" }}
                     >
                         <div className="research-card-title">{cluster.title}</div>
                     </motion.div>

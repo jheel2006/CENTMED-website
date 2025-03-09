@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     // Ensure the loading screen stays visible for at least 3 seconds
-    const minLoadTime = 3000;
+    const minLoadTime = 3200;
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, minLoadTime);
