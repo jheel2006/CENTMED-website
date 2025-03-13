@@ -14,12 +14,10 @@
 
 }
 
-
-
 .centmed-logo img {
-    height: 50px;
+    height: 60px;
     width: auto;
-    padding: 1rem;
+    padding: 1.2rem;
     /* Add padding around the logo */
 }
 
@@ -51,7 +49,7 @@
     left: 50%;
     bottom: 0;
     width: 0%;
-    height: 2px;
+    height: 2.5px;
     background-color: var(--teal);
     /* Teal underline */
     transition: width 0.3s ease-out, transform 0.3s ease-out;
