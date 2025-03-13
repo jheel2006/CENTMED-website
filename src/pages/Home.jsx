@@ -1,42 +1,34 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
+import { motion } from "framer-motion";
 import "./Home.css";
 
+const textBlocks = [
+    { id: 1, text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat ex at justo congue, non feugiat ligula fringilla.", align: "left" },
+    { id: 2, text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.", align: "right" },
+    { id: 3, text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", align: "left" }
+];
+
 const Home = () => {
-    const [contentVisible, setContentVisible] = useState(false);
-    const titleRef = useRef(null);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (!titleRef.current) return;
-
-            const titleRect = titleRef.current.getBoundingClientRect();
-            const halfwayPoint = window.innerHeight / 2;
-
-            if (titleRect.bottom < halfwayPoint) {
-                setContentVisible(true); // Fade in content when title moves halfway out
-            } else {
-                setContentVisible(false); // Fade out content when title moves back in
-            }
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
     return (
         <div className="home-container">
-            <div className="home-title-section" ref={titleRef}>
+            {/* Fullscreen Title Section */}
+            <section className="home-title-section">
                 <h1>Center for Translational Medical Devices</h1>
-            </div>
-            <div className={`home-content-section ${contentVisible ? "fade-in" : "fade-out"}`}>
-                <p>
-                    The objective of CENTMED is to catalyze translational research collaborations
-                    between researchers at NYUAD and clinicians at medical centres in Abu Dhabi
-                    and the UAE. CENTMED is specifically focused on the development of medical
-                    device technologies for diagnostics and therapeutics, with a broad goal of
-                    advancing Bioinnovation and Health within NYUAD and Abu Dhabi.
-                </p>
-            </div>
+            </section>
+
+            {/* Scroll-triggered Animated Sections */}
+            {textBlocks.map((block) => (
+                <motion.section
+                    key={block.id}
+                    className={`content-section ${block.align}`}
+                    initial={{ opacity: 0, x: block.align === "left" ? -100 : 100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: false, amount: 0.5 }} // Triggers when half of the section is visible
+                >
+                    <div className="text-container">{block.text}</div>
+                </motion.section>
+            ))}
         </div>
     );
 };
