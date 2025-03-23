@@ -76,6 +76,20 @@
     margin-left: 20px;
 }
 
+.event-speaker svg,
+.event-date svg,
+.event-university svg {
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+.event-university svg {
+    vertical-align: -5px;
+    /* Adjust this value if needed */
+}
+
+
+
 @media (max-width: 600px) {
     .event-card {
         flex-direction: column;
