@@ -18,15 +18,15 @@ const Research = () => {
 
     const clusters = [
         {
-            title: "Metabolic Cluster",
+            title: "Research Cluster 1: Metabolic Diseases",
             image: metabolicImage,
         },
         {
-            title: "Cardiovascular Cluster",
+            title: "Research Cluster 2: Cardiovascular Diseases",
             image: cardiovascularImage,
         },
         {
-            title: "Neurological Cluster",
+            title: "Research Cluster 3: Neurological Diseases",
             image: neurologicalImage,
         },
     ];
@@ -36,7 +36,7 @@ const Research = () => {
             <ScrollProgress />
             <h1 className="research-title">Research Clusters</h1>
             <p className="research-description">
-                The center has three disease focus areas: <strong>1) metabolic</strong>, <strong>2) cardiovascular</strong>, and <strong>3) neurological disorders</strong>.
+                The center has three disease focus areas: <strong>1) Metabolic</strong>, <strong>2) Cardiovascular</strong>, and <strong>3) Neurological disorders</strong>.
                 These are relevant to Abu Dhabi given the high prevalence of metabolic non-communicable diseases (NCD) such as obesity and diabetes, cardiovascular disease,
                 and the rising prevalence of neurologic disorders. We have established collaborations with endocrinologists, surgeons, cardiologists, neurologists, and
                 gastroenterologists to identify unmet clinical needs addressable through novel medical devices. Each focus area is led by a primary technical lead from NYUAD
