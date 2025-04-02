@@ -36,7 +36,7 @@
     display: flex;
     align-items: center;
     background: white;
-    border-radius: 10px;
+    border-radius: 17px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 90%;
     min-width: 850px;
@@ -65,7 +65,7 @@
 .event-speaker,
 .event-date {
     font-size: 1rem;
-    color: #555;
+
 }
 
 .event-image {
