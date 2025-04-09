@@ -1,71 +1,135 @@
-/* Main container */
+/* Home.css */
+
 .home-container {
-    display: flex;
-    flex-direction: column;
     width: 100%;
+    overflow-x: hidden;
 }
 
-/* Fullscreen Title Section */
-.home-title-section {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 2rem;
-}
-
-/* Each content section (Text + Empty Space) */
-.content-section {
-    height: 100vh;
-    display: flex;
-    width: 100%;
-    padding: 0 5vw;
-}
-
-/* Text block (Left or Right) */
-.text-container {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    line-height: 1.6;
-    padding: 2rem;
-}
-
-/* Empty space (For image/animation later) */
-.empty-space {
-    width: 50%;
-}
-
-/* Left-aligned text */
-.left .text-container {
-    justify-content: flex-start;
-    text-align: left;
-}
-
-/* Right-aligned text */
-.right .text-container {
-    justify-content: flex-end;
-    text-align: right;
-}
-
-.video-section {
+/* Landing Section Styles */
+.landing-section {
     position: relative;
-    width: 100vw;
     height: 100vh;
+    width: 100%;
     overflow: hidden;
 }
 
-.video-section video {
+.landing-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0
+}
+
+/* Title Container (Left Side) */
+.title-container {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    /* Stack elements vertically */
+    justify-content: center;
+    align-items: flex-start;
+    /* Align items to the left */
+    padding-right: 2rem;
+    margin-left: 2rem;
+
+}
+
+.title-container h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.2;
+    text-align: left;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: auto
+}
+
+.title-container h1::after {
+    content: "";
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100vw;
+    bottom: -8px;
+    left: 0;
+    width: calc(100%);
+    height: 4px;
+    background-color: var(--teal);
+    border-radius: 2px;
+}
+
+.title-container .subtitle {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4b4b4b;
+    text-align: left;
+    max-width: 85%;
+    margin-bottom: auto
+}
+
+/* Heart Animation Container (Right Side) */
+.heart-animation-container {
+    flex: 0 0 45%;
     height: 100vh;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    flex-shrink: 0;
+
+}
+
+/* Make the heart SVG larger */
+.heart-animation-container svg {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 80vh;
+}
+
+
+/* Content Sections */
+.content-section {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.content-section.left {
+    justify-content: flex-start;
+}
+
+.content-section.right {
+    justify-content: flex-end;
+}
+
+.text-container {
+    max-width: 600px;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .landing-content {
+        flex-direction: column;
+    }
+
+    .title-container,
+    .heart-animation-container {
+        flex: 0 0 100%;
+        padding: 1rem;
+    }
+
+    .title-container h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .heart-animation-container {
+        height: 50vh;
+    }
 }

@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./Home.css";
 import backgroundVideo from "../assets/test-covervideo1.mp4";
+import BeatingHeart from "../components/BeatingHeart";
+
 const textBlocks = [
     { id: 1, text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat ex at justo congue, non feugiat ligula fringilla.", align: "left" },
     { id: 2, text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.", align: "right" },
@@ -11,17 +13,23 @@ const textBlocks = [
 const Home = () => {
     return (
         <div className="home-container">
-            {/* Fullscreen Video Section (scrolls normally) */}
-            {/* <section className="video-section">
-                <video autoPlay loop muted playsInline>
-                    <source src={backgroundVideo} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-            </section> */}
+            {/* Landing Section with Title and Heart Animation */}
+            <section className="landing-section">
+                <div className="landing-content">
+                    {/* Title Container on the Left */}
+                    <div className="title-container">
+                        <h1>Center for<br />Translational<br />Medical Devices</h1>
+                        <p className="subtitle">
+                            The objective of CENTMED is to catalyze translational research collaborations between researchers at NYUAD and clinicians at medical centres in Abu Dhabi and the UAE. CENTMED is specifically focused on the development of medical device technologies for diagnostics and therapeutics, with a broad goal of advancing Bioinnovation and Health within NYUAD and Abu Dhabi.
+                        </p>
+                    </div>
 
-            {/* Fullscreen Title Section */}
-            <section className="home-title-section">
-                <h1>Center for Translational Medical Devices</h1>
+
+                    {/* Heart Animation Container on the Right */}
+                    <div className="heart-animation-container">
+                        <BeatingHeart />
+                    </div>
+                </div>
             </section>
 
             {/* Scroll-triggered Animated Sections */}
