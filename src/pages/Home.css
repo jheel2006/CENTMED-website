@@ -1,4 +1,12 @@
 /* Home.css */
+/* Apply background color to the entire viewport when on the home page */
+body.home-page {
+    /* background-color: #fcd6ff; */
+    margin: 0;
+    /* Remove any default margin around the body */
+    padding: 0;
+    /* Remove default padding */
+}
 
 .home-container {
     width: 100%;
@@ -174,7 +182,7 @@
 
 /* Animation for ECG line */
 .animate-ecg path {
-    animation: drawEcg 3s ease-in-out forwards;
+    animation: drawEcg 4s ease-in-out forwards;
 }
 
 @keyframes drawEcg {
@@ -192,4 +200,73 @@
         opacity: 1;
         stroke-dashoffset: 0;
     }
+}
+
+.content-section {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 2rem;
+
+}
+
+.content-section.left .text-wrapper {
+    flex-direction: row;
+}
+
+.content-section.right .text-wrapper {
+    flex-direction: row-reverse;
+}
+
+.text-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1000px;
+}
+
+.text-content {
+    max-width: 600px;
+}
+
+.block-heading {
+    font-size: 2rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+/* Teal underline using ::after */
+.block-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+    width: 60px;
+    height: 4px;
+    background-color: var(--teal);
+    border-radius: 2px;
+}
+
+.text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Ensures the circle is on the right */
+}
+
+.svg-icon {
+    order: 1;
+    /* Ensures the SVG is placed after the text content */
+    margin-left: 20rem;
+    ;
+    /* Adds space between the text and the SVG */
+}
+
+.text-content {
+    flex: 1;
+    /* Makes sure the text content takes up available space */
+}
+
+.block-heading {
+    font-size: 1.5rem;
+    /* Example heading size, adjust as needed */
 }

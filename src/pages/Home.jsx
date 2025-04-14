@@ -7,12 +7,19 @@ const Home = () => {
     const ecgRef = useRef(null);
 
     useEffect(() => {
+        // Add class to body only on homepage
+        document.body.classList.add('home-page');
+
         if (ecgRef.current) {
             // Add class to trigger animation after component mounts
             setTimeout(() => {
                 ecgRef.current.classList.add('animate-ecg');
             }, 500); // Short delay to let the page load first
         }
+        return () => {
+            // Clean up the class when leaving the homepage
+            document.body.classList.remove('home-page');
+        };
     }, []);
 
     const textBlocks = [
@@ -39,13 +46,14 @@ const Home = () => {
                                 preserveAspectRatio="none"
                             >
                                 <path
-                                    d="M0,25 L120,25 L130,25 L135,10 L140,40 L145,25 L160,25 L260,25 L270,20 L280,30 L290,25 L400,25 L600,25"
+                                    d="M0,25 L150,25 L157,10 L163,40 L170,25 L300,25 L307,10 L313,40 L320,25 L450,25 L457,10 L463,40 L470,25 L600,25"
                                     stroke="var(--teal)"
                                     strokeWidth="4"
                                     fill="none"
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                 />
+
                             </svg>
                         </div>
 
@@ -62,7 +70,7 @@ const Home = () => {
             </section>
 
             {/* Scroll-triggered Animated Sections */}
-            {textBlocks.map((block) => (
+            {textBlocks.map((block, index) => (
                 <motion.section
                     key={block.id}
                     className={`content-section ${block.align}`}
@@ -71,9 +79,25 @@ const Home = () => {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     viewport={{ once: false, amount: 0.5 }}
                 >
-                    <div className="text-container">{block.text}</div>
+                    <div className="text-wrapper">
+                        {/* Optional SVG next to first block */}
+                        {index === 0 && (
+                            <div className="svg-icon">
+                                <svg width="120" height="120" viewBox="0 0 24 24" fill="teal">
+                                    <circle cx="12" cy="12" r="10" />
+                                </svg>
+                            </div>
+                        )}
+
+                        {/* Text Content */}
+                        <div className="text-content">
+                            <h2 className="block-heading">Section {block.id}</h2>
+                            <p>{block.text}</p>
+                        </div>
+                    </div>
                 </motion.section>
             ))}
+
         </div>
     );
 };
