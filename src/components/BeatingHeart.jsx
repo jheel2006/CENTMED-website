@@ -33,7 +33,7 @@ const BeatingHeart = () => {
     useEffect(() => {
         if (!svgRef.current) return;
         const svg = d3.select(svgRef.current);
-        svg.selectAll("path, g").style("fill", "var(--teal)");
+        svg.selectAll("path, g").style("fill", "var(--purple)");
         beatAnimation(isFast);
 
         return () => {

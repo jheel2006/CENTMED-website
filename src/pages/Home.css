@@ -3,6 +3,7 @@
 .home-container {
     width: 100%;
     overflow-x: hidden;
+    /* background-color: #fcd6ff; */
 }
 
 /* Landing Section Styles */
@@ -32,7 +33,7 @@
     align-items: flex-start;
     /* Align items to the left */
     padding-right: 2rem;
-    margin-left: 2rem;
+    margin-left: 4rem;
 
 }
 
@@ -59,7 +60,7 @@
 }
 
 .title-container .subtitle {
-    margin-top: 20px;
+    margin-top: 0;
     font-size: 1rem;
     line-height: 1.6;
     color: #4b4b4b;
@@ -84,7 +85,7 @@
 .heart-animation-container svg {
     width: 100% !important;
     height: 100% !important;
-    max-height: 80vh;
+    max-height: 90vh;
 }
 
 
@@ -131,5 +132,64 @@
 
     .heart-animation-container {
         height: 50vh;
+    }
+}
+
+/* Add these styles to your Home.css file */
+
+.title-container h1 {
+    margin-bottom: 10px;
+    /* Give space for the ECG line */
+    position: relative;
+}
+
+/* Remove the original ::after pseudoelement */
+.title-container h1::after {
+    content: none;
+}
+
+/* Keep your original CSS animation that draws once */
+.ecg-container {
+    position: relative;
+    width: 80%;
+    height: 50px;
+    margin-top: -8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.ecg-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ecg-line path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    opacity: 0;
+}
+
+/* Animation for ECG line */
+.animate-ecg path {
+    animation: drawEcg 3s ease-in-out forwards;
+}
+
+@keyframes drawEcg {
+    0% {
+        opacity: 0;
+        stroke-dashoffset: 1000;
+    }
+
+    10% {
+        opacity: 1;
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
     }
 }

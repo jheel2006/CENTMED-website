@@ -1,0 +1,27 @@
+/* ECG Underline specific styles */
+
+/* Add a container for the ECG underline */
+.ecg-underline-container {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    /* Increased height */
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+/* Make sure the ECG SVG is positioned correctly */
+.ecg-underline {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    /* Slight adjustment to align properly */
+    width: 100%;
+    height: 6px;
+    /* Increased height */
+}
+
+/* Remove the original underline since we're replacing it with the ECG */
+.title-with-ecg::after {
+    content: none !important;
+}
