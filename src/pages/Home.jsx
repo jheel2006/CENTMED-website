@@ -1,7 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import "./Home.css";
 import BeatingHeart from "../components/BeatingHeart";
+import ResearchIcon from "../components/ResearchIcon";
+import TeamIcon from "../components/TeamIcon";
+import NewsIcon from "../components/NewsIcon";
 
 const Home = () => {
     const ecgRef = useRef(null);
@@ -23,9 +27,37 @@ const Home = () => {
     }, []);
 
     const textBlocks = [
-        { id: 1, text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat ex at justo congue, non feugiat ligula fringilla.", align: "left" },
-        { id: 2, text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.", align: "right" },
-        { id: 3, text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", align: "left" }
+        {
+            id: 1,
+            title: "What We Do",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat ex at justo congue, non feugiat ligula fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat ex at justo congue, non feugiat ligula fringilla.",
+            align: "left",
+            icon: ResearchIcon,
+            buttons: [
+                { label: "Research Clusters", link: "/research" }
+            ]
+        },
+        {
+            id: 2,
+            title: "Who We Are",
+            text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+            align: "right",
+            icon: TeamIcon,
+            buttons: [
+                { label: "Meet Our Team", link: "/people" }
+            ]
+        },
+        {
+            id: 3,
+            title: "What's New",
+            text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            align: "left",
+            icon: NewsIcon,
+            buttons: [
+                { label: "News", link: "/news" },
+                { label: "Events", link: "/events" }
+            ]
+        }
     ];
 
     return (
@@ -53,7 +85,6 @@ const Home = () => {
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                 />
-
                             </svg>
                         </div>
 
@@ -69,35 +100,76 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Scroll-triggered Animated Sections */}
-            {textBlocks.map((block, index) => (
+            {/* Scroll-triggered Animated Sections with slide effects */}
+            {textBlocks.map((block) => (
                 <motion.section
                     key={block.id}
-                    className={`content-section ${block.align}`}
-                    initial={{ opacity: 0, x: block.align === "left" ? -100 : 100 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    viewport={{ once: false, amount: 0.5 }}
+                    className="content-section"
+                    viewport={{ once: false, amount: 0.3 }}
                 >
-                    <div className="text-wrapper">
-                        {/* Optional SVG next to first block */}
-                        {index === 0 && (
-                            <div className="svg-icon">
-                                <svg width="120" height="120" viewBox="0 0 24 24" fill="teal">
-                                    <circle cx="12" cy="12" r="10" />
-                                </svg>
-                            </div>
-                        )}
+                    <div className="split-section-content">
+                        {block.align === "left" ? (
+                            <>
+                                <motion.div
+                                    className="split-text-container"
+                                    initial={{ opacity: 0, x: -100 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut" }}
+                                >
+                                    <h2 className="block-heading">{block.title}</h2>
+                                    <p className="block-section-text">{block.text}</p>
 
-                        {/* Text Content */}
-                        <div className="text-content">
-                            <h2 className="block-heading">Section {block.id}</h2>
-                            <p>{block.text}</p>
-                        </div>
+                                    {/* Buttons */}
+                                    <div className="block-buttons">
+                                        {block.buttons && block.buttons.map((button, index) => (
+                                            <Link key={index} to={button.link} className="section-button">
+                                                {button.label}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </motion.div>
+                                <motion.div
+                                    className="split-svg-container"
+                                    initial={{ opacity: 0, x: 100 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                                >
+                                    {block.icon ? <block.icon /> : block.svg}
+                                </motion.div>
+                            </>
+                        ) : (
+                            <>
+                                <motion.div
+                                    className="split-svg-container"
+                                    initial={{ opacity: 0, x: -100 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut" }}
+                                >
+                                    {block.icon ? <block.icon /> : block.svg}
+                                </motion.div>
+                                <motion.div
+                                    className="split-text-container"
+                                    initial={{ opacity: 0, x: 100 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                                >
+                                    <h2 className="block-heading">{block.title}</h2>
+                                    <p className="block-section-text">{block.text}</p>
+
+                                    {/* Buttons */}
+                                    <div className="block-buttons">
+                                        {block.buttons && block.buttons.map((button, index) => (
+                                            <Link key={index} to={button.link} className="section-button">
+                                                {button.label}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </motion.div>
+                            </>
+                        )}
                     </div>
                 </motion.section>
             ))}
-
         </div>
     );
 };

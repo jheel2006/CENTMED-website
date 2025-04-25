@@ -12,6 +12,7 @@ import News from "./pages/News.jsx";
 import Events from "./pages/Events.jsx";
 import Careers from "./pages/Careers.jsx";
 import LoadingScreen from "./components/LoadingScreen";
+import Footer from './components/Footer.jsx';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -40,6 +41,7 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/careers" element={<Careers />} />
       </Routes>
+      {/* <Footer /> */}
     </Router>
   );
 }
