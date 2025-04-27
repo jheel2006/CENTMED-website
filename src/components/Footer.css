@@ -8,6 +8,15 @@
     padding: 1rem 2rem;
     color: white;
     box-sizing: border-box;
+    /* Remove opacity and visibility */
+    /* Instead, use transform to position it below the viewport */
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.footer.visible {
+    /* When visible, move it to its normal position */
+    transform: translateY(0);
 }
 
 .footer-content {

@@ -20,6 +20,14 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Add this to your global CSS or App.css */
+main,
+.content-container,
+#root>div {
+  padding-bottom: 80px;
+  /* Adjust based on your footer height */
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

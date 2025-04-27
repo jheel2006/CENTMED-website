@@ -41,7 +41,7 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/careers" element={<Careers />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }
