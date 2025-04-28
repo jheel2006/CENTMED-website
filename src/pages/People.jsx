@@ -21,10 +21,16 @@ const sections = [
                 photo: RafaelSongImage
             },
             {
-                name: "Panče Naumov",
+                name: "Khalil Ramadi",
                 title: "PRINCIPAL INVESTIGATOR",
-                description: "Panče Naumov is a full professor of chemistry with tenure at New York University Abu Dhabi (NYUAD), where he also serves as a Global Network Professor and Director of the NYUAD Center for Smart Engineering Materials (CSEM). He leads the Smart Materials Lab, recognized as the top research team in the UAE in chemistry and materials science. Naumov obtained his PhD from the Tokyo Institute of Technology in 2004 and has held research positions in Japan before joining NYUAD. With approximately 300 publications and over USD 15 million in funding, he has delivered around 400 presentations, mentoring more than 60 students since 2012. Naumov serves on editorial boards for several journals and holds leadership roles in various scientific organizations, including the founder of the UAE Chapter of the American Chemical Society, founder of the Emirates Crystallographic Society and a number of other roles. His accolades include multiple fellowships and prestigious awards, recognizing his exceptional contributions to the field and the UAE.",
-                photo: PanceNaumovImage
+                description: "Dr. Ramadi is an Assistant Professor of Bioengineering at NYUAD and Director of the Laboratory for Advanced Neuroengineering and Translational Medicine (LANTRN). He is also an affiliated Professor of Radiology at NYU Langone Health and Grossman School of Medicine. Before his faculty appointments, he was an NIH Ruth L. Kirschstein F32 postdoctoral fellow at MIT. Dr. Ramadi earned his PhD in Biomedical Engineering from MIT and Harvard Medical School. His research develops technologies to address clinical challenges and improve health. His lab focuses on ingestible electronic pills and implantable devices for drug delivery and neuromodulation. A board member and former co-Director of MIT Hacking Medicine, he helped launch 50+ companies, raising $250M+. He has mentored 50+ early-stage companies through MIT Sandbox, MIT IDEA2 Global Incubator, and MIT-UM6P Explorer/Accelerator programs. Named a TED Fellow, CIFAR Global Scholar, Forbes 30 Under 30, and MIT Technology Review Innovator Under 35 (MENA), he has received honors including the BMES Career Development Award and a NASA Aeronautics Scholarship.",
+                photo: KhalilRamadiImage
+            },
+            {
+                name: "Sohmyung Ha",
+                title: "PRINCIPAL INVESTIGATOR",
+                description: "Sohmyung Ha received the BS and MS degrees in Electrical Engineering from KAIST, Korea and the M.S. and Ph.D. degrees in Bioengineering from University of California, San Diego, CA, USA. From 2006 to 2010, he worked at Samsung Electronics as an integrated circuit designer for commercial multimedia devices. Since 2016, he has been with New York University Abu Dhabi, where he is Associate Professor, and also with New York University, where he is Global Network Associate Professor. He currently serves as an associate editor of IEEE Transactions on Biomedical Circuits and Systems, IEEE Open Journal of Solid-State Circuits Society, and Frontiers in Electronics. He is a member of the Analog Signal Processing Technical Committee and the Biomedical and Life Science Circuits and Systems Technical Committee of the IEEE Circuits and Systems Society. He is also a member of the international technical program committee of the International Solid-State Circuits Conference (ISSCC).",
+                photo: SohmyungHaImage
             },
             {
                 name: "Mohammad Qasaimeh",
@@ -33,10 +39,10 @@ const sections = [
                 photo: MohdQasaimehImage
             },
             {
-                name: "Khalil Ramadi",
+                name: "Panče Naumov",
                 title: "PRINCIPAL INVESTIGATOR",
-                description: "Dr. Ramadi is an Assistant Professor of Bioengineering at NYUAD and Director of the Laboratory for Advanced Neuroengineering and Translational Medicine (LANTRN). He is also an affiliated Professor of Radiology at NYU Langone Health and Grossman School of Medicine. Before his faculty appointments, he was an NIH Ruth L. Kirschstein F32 postdoctoral fellow at MIT. Dr. Ramadi earned his PhD in Biomedical Engineering from MIT and Harvard Medical School. His research develops technologies to address clinical challenges and improve health. His lab focuses on ingestible electronic pills and implantable devices for drug delivery and neuromodulation. A board member and former co-Director of MIT Hacking Medicine, he helped launch 50+ companies, raising $250M+. He has mentored 50+ early-stage companies through MIT Sandbox, MIT IDEA2 Global Incubator, and MIT-UM6P Explorer/Accelerator programs. Named a TED Fellow, CIFAR Global Scholar, Forbes 30 Under 30, and MIT Technology Review Innovator Under 35 (MENA), he has received honors including the BMES Career Development Award and a NASA Aeronautics Scholarship.",
-                photo: KhalilRamadiImage
+                description: "Panče Naumov is a full professor of chemistry with tenure at New York University Abu Dhabi (NYUAD), where he also serves as a Global Network Professor and Director of the NYUAD Center for Smart Engineering Materials (CSEM). He leads the Smart Materials Lab, recognized as the top research team in the UAE in chemistry and materials science. Naumov obtained his PhD from the Tokyo Institute of Technology in 2004 and has held research positions in Japan before joining NYUAD. With approximately 300 publications and over USD 15 million in funding, he has delivered around 400 presentations, mentoring more than 60 students since 2012. Naumov serves on editorial boards for several journals and holds leadership roles in various scientific organizations, including the founder of the UAE Chapter of the American Chemical Society, founder of the Emirates Crystallographic Society and a number of other roles. His accolades include multiple fellowships and prestigious awards, recognizing his exceptional contributions to the field and the UAE.",
+                photo: PanceNaumovImage
             },
             {
                 name: "Dipesh Chaudhury",
@@ -44,12 +50,7 @@ const sections = [
                 description: "",
                 photo: DipeshChaudhuryImage
             },
-            {
-                name: "Sohmyung Ha",
-                title: "PRINCIPAL INVESTIGATOR",
-                description: "Sohmyung Ha received the BS and MS degrees in Electrical Engineering from KAIST, Korea and the M.S. and Ph.D. degrees in Bioengineering from University of California, San Diego, CA, USA. From 2006 to 2010, he worked at Samsung Electronics as an integrated circuit designer for commercial multimedia devices. Since 2016, he has been with New York University Abu Dhabi, where he is Associate Professor, and also with New York University, where he is Global Network Associate Professor. He currently serves as an associate editor of IEEE Transactions on Biomedical Circuits and Systems, IEEE Open Journal of Solid-State Circuits Society, and Frontiers in Electronics. He is a member of the Analog Signal Processing Technical Committee and the Biomedical and Life Science Circuits and Systems Technical Committee of the IEEE Circuits and Systems Society. He is also a member of the international technical program committee of the International Solid-State Circuits Conference (ISSCC).",
-                photo: SohmyungHaImage
-            },
+
         ]
     },
     {
