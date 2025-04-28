@@ -6,6 +6,7 @@ import BeatingHeart from "../components/BeatingHeart";
 import ResearchIcon from "../components/ResearchIcon";
 import TeamIcon from "../components/TeamIcon";
 import NewsIcon from "../components/NewsIcon";
+import SectionNavigator from "../components/SectionNavigator";
 
 const Home = () => {
     const ecgRef = useRef(null);
@@ -62,6 +63,9 @@ const Home = () => {
 
     return (
         <div className="home-container">
+            {/* Section Navigator */}
+            {/* <SectionNavigator /> */}
+
             {/* Landing Section with Title and Heart Animation */}
             <section className="landing-section">
                 <div className="landing-content">
@@ -105,6 +109,7 @@ const Home = () => {
                 <motion.section
                     key={block.id}
                     className="content-section"
+                    id={block.id === 1 ? "what-we-do" : block.id === 2 ? "who-we-are" : "whats-new"}
                     viewport={{ once: false, amount: 0.3 }}
                 >
                     <div className="split-section-content">
