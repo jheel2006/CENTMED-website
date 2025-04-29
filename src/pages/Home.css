@@ -29,6 +29,8 @@ body.home-page {
     align-items: center;
     justify-content: space-between;
     padding: 0;
+    border-radius: 50px;
+    /* background-color: var(--purple); */
 }
 
 /* Title Container (Left Side) */

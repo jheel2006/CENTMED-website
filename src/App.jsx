@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Make sure this import is correct
 import Navbar from './components/Navbar.jsx';  // Import Navbar Component
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home.jsx";
 import Research from "./pages/Research.jsx";
 import People from "./pages/People.jsx";
@@ -31,6 +32,7 @@ function App() {
     <LoadingScreen />
   ) : (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
