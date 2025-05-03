@@ -19,8 +19,8 @@
 
 /* Add this to your BeatingHeart.css file */
 .heart-svg-wrapper {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,5 +37,5 @@
     max-height: 80vh;
     /* Reduced from 90vh to 80vh */
     overflow: visible;
-    opacity: 0.4;
+    opacity: 0.9;
 }
