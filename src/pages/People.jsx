@@ -10,6 +10,10 @@ import KhalilRamadiImage from "../assets/KhalilRamadi_image.jpeg";
 import DipeshChaudhuryImage from "../assets/DipeshChaudhury_image.jpg";
 import SohmyungHaImage from "../assets/SohmyungHa_image.png";
 import SanjitMajhiImage from "../assets/SanjitMajhi_image.jpg";
+import PukarMaharjanImage from "../assets/PukarMaharjan_image.jpg";
+import VegaImage from "../assets/Vega_image.jpg";
+import PrimImage from "../assets/Prim_image.jpg";
+import SajinaLalImage from "../assets/SajinaLal_image.png";
 
 const sections = [
     {
@@ -54,6 +58,32 @@ const sections = [
         ]
     },
     {
+        title: "CCAD - CO-INVESTIGATORS",
+        displayAsList: true, // New flag to display as list
+        people: [
+            {
+                name: "Hussein Saadi, MD",
+                title: "Co-Investigator, Cleveland Clinic Abu Dhabi",
+                description: "Cardiology Department"
+            },
+            {
+                name: "Dr. Ayman Al-Sibaie",
+                title: "Co-Investigator, Cleveland Clinic Abu Dhabi",
+                description: "Respiratory Institute"
+            },
+            {
+                name: "Dr. Sarah Johnson",
+                title: "Co-Investigator, Cleveland Clinic Abu Dhabi",
+                description: "Heart, Vascular & Thoracic Institute"
+            },
+            {
+                name: "Dr. Mohammed Al Zaabi",
+                title: "Co-Investigator, Cleveland Clinic Abu Dhabi",
+                description: "Cardiology Department"
+            }
+        ]
+    },
+    {
         title: "RESEARCH STAFF", people: [
             {
                 name: "Sanjit Majhi",
@@ -62,40 +92,107 @@ const sections = [
                 photo: SanjitMajhiImage
             },
             {
-                name: "Dr. Emily White",
-                title: "Postdoctoral Fellow",
-                description: "Focused on AI-driven diagnostics and healthcare solutions.",
+                name: "Hanan Mohammed",
+                title: "RESEARCH STAFF",
+                description: "Hanan is postdoctoral research associate in the LANTRN Lab and possesses a multidisciplinary background that overlaps material science, biomedical & electrical engineering. She has extensive experience in clean room-based nanofabrication techniques, 3D printing, material characterization & imaging. Hanan pursued her PhD in Electrical Engineering from the Sensing, Magnetism & Microsystems (SMM) Group at King Abdullah University of Science & Technology (KSA) and prior to that obtained her Masters in Nanoscale Science & Technology from University of Leeds (UK). Hanan is certified in innovation & technology transfer from ASTP & Cornell University and has served as a mentor at several international hackathons such as MIT, Impact Hub UK, Teens in AI etc. She is passionate about science engagement & communication and has won several awards for it such as Falling Walls Lab, IET PATW etc.",
                 photo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
-            }
+            },
+            {
+                name: "Pukar Maharjan",
+                title: "RESEARCH STAFF",
+                description: "Pukar Maharjan is a researcher specializing in wearable electronics, electronic tattoos, biosensing, and energy-harvesting systems. His interdisciplinary expertise spans materials science, flexible electronics, and advanced fabrication techniques, enabling the development of innovative solutions for health monitoring and seamless human–device interaction. He is currently a Postdoctoral Associate under Prof. Sohmyung Ha at the Center for Translational Medical Devices (CENTMED) at NYU Abu Dhabi. Dr. Maharjan received his Ph.D. in Electronics Engineering from Kwangwoon University in Seoul, South Korea, where he also continued his work as a Postdoctoral Researcher. He further expanded his research at The University of Texas at Austin in the Department of Aerospace Engineering and Engineering Mechanics, working under the mentorship of Prof. Nanshu Lu. With a strong foundation in microfabrication, soft electronics, and system-level integration, Dr. Maharjan’s work focuses on the design and development of next-generation, non-invasive, and energy-efficient wearable medical devices tailored for personalized and preventative healthcare.",
+                photo: PukarMaharjanImage
+            },
+            {
+                name: "Heba Naser",
+                title: "RESEARCH STAFF",
+                description: "",
+                photo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+            },
+            {
+                name: "Vega",
+                title: "RESEARCH STAFF",
+                description: "Dr. Vega Pradana Rachim is a Research Scientist at the Integrated BioElectronics Laboratory, led by Prof. Sohmyung Ha, and the Research Center for Translational Medical Devices (CENTMED) at NYU Abu Dhabi. He earned his Ph.D. in Electronics Engineering in 2019 from Pukyong National University, South Korea, where he developed multimodal wrist-wearable biosensors for non-invasive smart healthcare, including cuffless blood pressure and glucose monitoring. He received the Researcher of the Year award (BK21 PLUS, 2017) and Best Paper Awards (IEEE ICASI, 2017; Korean Sensor Society, 2018). He continued at POSTECH, South Korea, in the Innovative Medical Solution Lab as Postdoctoral Researcher (2019–2021) and Research Assistant Professor (2021–2025), co-leading projects on biosensors, artificial pancreas systems, and diabetes algorithms with Prof. Sung-Min Park and CureStream. He received the PIURI Fellowship (2022–2024) and a Korean NRF grant (2020–2022). His current research focuses on wearable closed-loop therapeutic systems for sleep disorders, integrating neuromodulation, embedded AI, and digital twin modeling for personalized care.",
+                photo: VegaImage
+            },
+            {
+                name: "Abdel",
+                title: "RESEARCH STAFF",
+                description: "",
+                photo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+            },
+            {
+                name: "Prim",
+                title: "RESEARCH STAFF",
+                description: "Prim is a Research Assistant with a degree in Mechanical Engineering from New York University Abu Dhabi. Her interest lies in the field of medical device technology and additive manufacturing. Prim is designing a medical device with improved fluid drainage efficacy to promote faster healing for post-surgical patients.",
+                photo: PrimImage
+            },
         ]
     },
     {
-        title: "COLLABORATORS", people: [
+        title: "CCAD COLLABORATORS",
+        displayAsList: true, // New flag to display as list
+        people: [
             {
-                name: "Dr. Robert Brown",
+                name: "Carlos Abril",
                 title: "Lead Engineer",
                 description: "Develops cutting-edge therapeutic medical technologies.",
-                photo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+            },
+            {
+                name: "Juan S. Barajas-Gamboa",
+                title: "Lead Engineer",
+                description: "Develops cutting-edge therapeutic medical technologies.",
             }
         ]
     },
     {
         title: "ADMINISTRATION", people: [
             {
-                name: "Dr. Alice Green",
-                title: "Biomedical Scientist",
-                description: "Exploring nanotechnology applications in medicine.",
-                photo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+                name: "Sajina Lal",
+                title: "ADMINISTRATION",
+                description: "  ",
+                photo: SajinaLalImage
             }
         ]
     },
     {
-        title: "ADVISORY BOARD", people: [
+        title: "ADVISORY BOARD",
+        displayAsList: true, // New flag to display as list 
+        people: [
             {
-                name: "Dr. Michael Blue",
-                title: "Clinical Researcher",
-                description: "Bridging medical research with patient applications.",
-                photo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+                name: "Andreas Hielscher",
+                title: "Advisory Board Member",
+                description: "NYU Tandon School of Engineering, USA",
+            },
+            {
+                name: "Christopher Lee",
+                title: "Advisory Board Member",
+                description: "Despierta Ventures (Venture capital firm), USA",
+            },
+            {
+                name: "Giovanni Traverso",
+                title: "Advisory Board Member",
+                description: "MIT, Brigham and Women’s Hospital, USA",
+            },
+            {
+                name: "Meena Subramanyam",
+                title: "Advisory Board Member",
+                description: "Takeda Pharmaceutical, USA",
+            },
+            {
+                name: "Nicole Pamme",
+                title: "Advisory Board Member",
+                description: "Department of Chemistry, Stockholm University, Sweden",
+            },
+            {
+                name: "Ali Bhagat",
+                title: "Advisory Board Member",
+                description: "National University of Singapore",
+            },
+            {
+                name: "Sultan Haider",
+                title: "Advisory Board Member",
+                description: "Siemens Healthineers, Germany",
             }
         ]
     }
@@ -133,41 +230,67 @@ const People = () => {
                         <div className="horizontal-line"></div>
                     </div>
 
-                    {/* Animate the whole people-grid from bottom to top */}
-                    <motion.div
-                        className="people-grid"
-                        initial={{ y: 50, opacity: 0 }} // Start from below and hidden
-                        whileInView={{ y: 0, opacity: 1 }} // Move to its final position (top) and become visible
-                        viewport={{ once: true, amount: 0.2 }} // Trigger animation once the section is 20% in view
-                        transition={{ duration: 0.3, ease: "easeOut" }} // Smooth transition
-                    >
-                        {section.people.map((person, personIndex) => (
-                            <div
-                                key={personIndex}
-                                className="researcher-card"
-                                onClick={() => showModal(person)}
-                            >
-                                <img
-                                    src={person.photo}
-                                    alt={person.name}
-                                    className="researcher-image"
-                                />
-                                <div className="researcher-info">
-                                    <h3>{person.name}</h3>
-                                </div>
+                    {/* Check if section should be displayed as list or grid */}
+                    {section.displayAsList ? (
+                        <motion.div
+                            className="investigators-list"
+                            initial={{ y: 50, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true, amount: 0.2 }}
+                            transition={{ duration: 0.3, ease: "easeOut" }}
+                        >
+                            <div className="list-container">
+                                {section.people.map((person, personIndex) => (
+                                    <div key={personIndex} className="list-item">
+                                        <div className="bullet-point">•</div>
+                                        <div className="investigator-info">
+                                            <h3>{person.name}</h3>
+                                            <p>{person.title}</p>
+                                            {person.description && <p className="description">{person.description}</p>}
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
-                        ))}
-                    </motion.div>
+                        </motion.div>
+                    ) : (
+                        /* Animate the people-grid from bottom to top */
+                        <motion.div
+                            className="people-grid"
+                            initial={{ y: 50, opacity: 0 }} // Start from below and hidden
+                            whileInView={{ y: 0, opacity: 1 }} // Move to its final position (top) and become visible
+                            viewport={{ once: true, amount: 0.2 }} // Trigger animation once the section is 20% in view
+                            transition={{ duration: 0.3, ease: "easeOut" }} // Smooth transition
+                        >
+                            {section.people.map((person, personIndex) => (
+                                <div
+                                    key={personIndex}
+                                    className="researcher-card"
+                                    onClick={() => showModal(person)}
+                                >
+                                    <img
+                                        src={person.photo}
+                                        alt={person.name}
+                                        className="researcher-image"
+                                    />
+                                    <div className="researcher-info">
+                                        <h3>{person.name}</h3>
+                                    </div>
+                                </div>
+                            ))}
+                        </motion.div>
+                    )}
 
                     {/* Modal */}
                     {modalVisible && selectedPerson && (
                         <div className="modal-overlay" onClick={closeModal}>
                             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                                <img
-                                    src={selectedPerson.photo}
-                                    alt={selectedPerson.name}
-                                    className="modal-image"
-                                />
+                                {selectedPerson.photo && (
+                                    <img
+                                        src={selectedPerson.photo}
+                                        alt={selectedPerson.name}
+                                        className="modal-image"
+                                    />
+                                )}
                                 <div className="modal-text">
                                     <h2>{selectedPerson.name}</h2>
                                     <h3>{selectedPerson.title}</h3>
