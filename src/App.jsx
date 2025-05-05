@@ -7,6 +7,9 @@ import Navbar from './components/Navbar.jsx';  // Import Navbar Component
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home.jsx";
 import Research from "./pages/Research.jsx";
+import MetabolicCluster from "./components/MetabolicCluster.jsx";
+import CardiovascularCluster from "./components/CardiovascularCluster.jsx";
+import NeurologicalCluster from "./components/NeurologicalCluster.jsx";
 import People from "./pages/People.jsx";
 import Publications from "./pages/Publications.jsx";
 import News from "./pages/News.jsx";
@@ -37,6 +40,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/research" element={<Research />} />
+        <Route path="/research/metabolic" element={<MetabolicCluster />} /> {/* Add the new route */}
+        <Route path="/research/cardiovascular" element={<CardiovascularCluster />} />
+        <Route path="/research/neurological" element={<NeurologicalCluster />} />
         <Route path="/people" element={<People />} />
         <Route path="/publications" element={<Publications />} />
         <Route path="/news" element={<News />} />

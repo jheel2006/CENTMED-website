@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom"; // Import useLocation
+import { useLocation, useNavigate } from "react-router-dom"; // Added useNavigate
 import "./Research.css";
 import ScrollProgress from "../components/ScrollProgress.jsx";
 import metabolicImage from "../assets/metabolic_image.webp";
@@ -8,26 +8,35 @@ import cardiovascularImage from "../assets/cardiovascular_image.jpg";
 import neurologicalImage from "../assets/neurological_image.jpg";
 
 const Research = () => {
-    const location = useLocation(); // Get current page location
+    const location = useLocation();
+    const navigate = useNavigate(); // Added navigate hook
     const [triggerAnimation, setTriggerAnimation] = useState(false);
 
     useEffect(() => {
-        setTriggerAnimation(false); // Reset animation before triggering
-        setTimeout(() => setTriggerAnimation(true), 50); // Small delay ensures animation resets properly
-    }, [location.pathname]); // Re-run animation whenever location changes
+        setTriggerAnimation(false);
+        setTimeout(() => setTriggerAnimation(true), 50);
+    }, [location.pathname]);
+
+    // Function to handle cluster card click
+    const handleClusterClick = (clusterPath) => {
+        navigate(clusterPath);
+    };
 
     const clusters = [
         {
             title: "Research Cluster 1: Metabolic Diseases",
             image: metabolicImage,
+            path: "/research/metabolic",
         },
         {
             title: "Research Cluster 2: Cardiovascular Diseases",
             image: cardiovascularImage,
+            path: "/research/cardiovascular",
         },
         {
             title: "Research Cluster 3: Neurological Diseases",
             image: neurologicalImage,
+            path: "/research/neurological",
         },
     ];
 
@@ -48,10 +57,11 @@ const Research = () => {
                         key={index}
                         className="research-card"
                         style={{ backgroundImage: `url(${cluster.image})` }}
-                        initial={{ opacity: 0, y: 50 }} // Start hidden and slightly below
-                        whileInView={{ opacity: 1, y: 0 }} // Animate when in view
-                        viewport={{ once: true, amount: 0.2 }} // Ensures animation triggers once when 20% visible
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 0.3, delay: index * 0.1, ease: "easeOut" }}
+                        onClick={() => handleClusterClick(cluster.path)}
                     >
                         <div className="research-card-title">{cluster.title}</div>
                     </motion.div>
