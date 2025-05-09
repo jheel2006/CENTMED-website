@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
-import metabolicFeatured from "../assets/metabolic_image.webp";
+import metabolicFeatured from "../assets/metabolic_image.jpg";
 import "./ClusterDetail.css";
 
 const MetabolicCluster = () => {

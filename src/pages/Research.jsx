@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useLocation, useNavigate } from "react-router-dom"; // Added useNavigate
 import "./Research.css";
 import ScrollProgress from "../components/ScrollProgress.jsx";
-import metabolicImage from "../assets/metabolic_image.webp";
+import metabolicImage from "../assets/metabolic_image.jpg";
 import cardiovascularImage from "../assets/cardiovascular_image.jpg";
 import neurologicalImage from "../assets/neurological_image.jpg";
 
