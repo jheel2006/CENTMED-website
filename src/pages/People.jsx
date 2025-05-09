@@ -59,28 +59,27 @@ const sections = [
     },
     {
         title: "CCAD - CO-INVESTIGATORS",
-        displayAsList: true, // New flag to display as list
+        displayAsList: false,
         people: [
             {
                 name: "Hussein Saadi, MD",
-                title: "Co-Investigator, Cleveland Clinic Abu Dhabi",
-                description: "Cardiology Department"
+                title: "CO-INVESTIGATOR - CLEVELAND CLINIC ABU DHABI",
+                // description: "Cardiology Department",
+                photo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
             },
             {
-                name: "Dr. Ayman Al-Sibaie",
-                title: "Co-Investigator, Cleveland Clinic Abu Dhabi",
-                description: "Respiratory Institute"
+                name: "Firas Al Badarin, MD",
+                title: "CO-INVESTIGATOR - CLEVELAND CLINIC ABU DHABI",
+                // description: "Respiratory Institute",
+                photo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
             },
             {
-                name: "Dr. Sarah Johnson",
-                title: "Co-Investigator, Cleveland Clinic Abu Dhabi",
-                description: "Heart, Vascular & Thoracic Institute"
+                name: "Florian Roser, MD, PhD",
+                title: "CO-INVESTIGATOR - CLEVELAND CLINIC ABU DHABI",
+                // description: "Heart, Vascular & Thoracic Institute",
+                photo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
             },
-            {
-                name: "Dr. Mohammed Al Zaabi",
-                title: "Co-Investigator, Cleveland Clinic Abu Dhabi",
-                description: "Cardiology Department"
-            }
+
         ]
     },
     {
@@ -131,17 +130,19 @@ const sections = [
     },
     {
         title: "CCAD COLLABORATORS",
-        displayAsList: true, // New flag to display as list
+        displayAsList: false,
         people: [
             {
                 name: "Carlos Abril",
-                title: "Lead Engineer",
+                title: "COLLABORATOR - CLEVELAND CLINIC ABU DHABI",
                 description: "Develops cutting-edge therapeutic medical technologies.",
+                photo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
             },
             {
                 name: "Juan S. Barajas-Gamboa",
-                title: "Lead Engineer",
+                title: "COLLABORATOR - CLEVELAND CLINIC ABU DHABI",
                 description: "Develops cutting-edge therapeutic medical technologies.",
+                photo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
             }
         ]
     },
