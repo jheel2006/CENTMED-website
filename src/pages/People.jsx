@@ -14,6 +14,8 @@ import HananMohammedImage from "../assets/HananMohammed_image.png";
 import PukarMaharjanImage from "../assets/PukarMaharjan_image.jpg";
 import VegaImage from "../assets/Vega_image.jpg";
 import PrimImage from "../assets/Prim_image.jpg";
+import AyoubGliaImage from "../assets/AyoubGlia_image.jpg";
+import WaelOthmanImage from "../assets/WaelOthman_image.jpg";
 import SajinaLalImage from "../assets/SajinaLal_image.png";
 
 const sections = [
@@ -126,6 +128,18 @@ const sections = [
                 title: "RESEARCH STAFF",
                 description: "Prim is a Research Assistant with a degree in Mechanical Engineering from New York University Abu Dhabi. Her interest lies in the field of medical device technology and additive manufacturing. Prim is designing a medical device with improved fluid drainage efficacy to promote faster healing for post-surgical patients.",
                 photo: PrimImage
+            },
+            {
+                name: "Ayoub Glia",
+                title: "RESEARCH STAFF",
+                description: "Dr. Ayoub Glia holds a Master’s degree in Materials Science and Engineering from Masdar Institute of Science and Technology (Khalifa University), where he focused on advanced atomic force microscopy (AFM) techniques and materials characterization. He later earned his PhD in Mechanical Engineering from NYU Tandon School of Engineering, where he developed open microfluidic technologies for capturing and analyzing circulating tumor cells and pioneered the integration of AFM principles with microfluidic platforms. Currently a postdoctoral research associate at AMMLab, he works on cryopreservable paper-based 3D tumor models. Dr. Glia work resulted in granted patent, several published peer-reviewed journal articles—including a featured paper in Advanced Science—and several international conference proceedings. Dr. Glia served on the program committee of the MARSS2023 Conference, and was chairing the Early Engineers Research Forum at NYU Abu Dhabi, which he founded to promote inclusion and academic exchange.He is the recipient of multiple honors including the MIT Technology Review's Innovators Under 35 MENA (2022), the SkillUp 1st Prize (2022), Best Paper Application Award at MARSS 2024, and several NYUAD publication grants.",
+                photo: AyoubGliaImage
+            },
+            {
+                name: "Wael Othman",
+                title: "RESEARCH STAFF",
+                description: "Wael Othman earned his Ph.D. in Mechanical Engineering from New York University in 2023. He is currently a Postdoctoral Research Associate in the Advanced Microfluidics and Microdevices Laboratory (AMMLab) at NYU Abu Dhabi. His research centers on developing systems and methods for tactile sensing in minimally invasive surgery. In addition to his research, he serves as the postdoctoral representative on the Engineering IDBEA Committee and as the Engineering Representative on the Postdoctoral Community Steering Committee. Wael’s work has been recognized with prestigious honors, including the Forbes 30 Under 30 and MIT Innovators Under 35 awards.",
+                photo: WaelOthmanImage
             },
         ]
     },

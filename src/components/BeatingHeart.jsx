@@ -62,7 +62,7 @@ const BeatingHeart = () => {
         ripple.transition()
             .duration(800)
             .ease(d3.easeCubicOut)
-            .attr("r", 100)
+            .attr("r", 60)
             .attr("fill-opacity", 0)
             .remove();
     };

@@ -7,8 +7,8 @@ import ResearchIcon from "../components/ResearchIcon";
 import TeamIcon from "../components/TeamIcon";
 import NewsIcon from "../components/NewsIcon";
 import SectionNavigator from "../components/SectionNavigator";
-import researchImage from "../assets/centmed_research_areas.png"; // update path and name accordingly
-
+import researchImage from "../assets/centmed_research_areas.png";
+import groupPhoto from "../assets/GroupPhoto.jpg";
 
 const Home = () => {
     const ecgRef = useRef(null);
@@ -45,7 +45,7 @@ const Home = () => {
             title: "Who We Are",
             text: "We’re a team of researchers, clinicians, and students working together to improve healthcare through technology. With different areas of expertise, we collaborate across disciplines to turn ideas into practical solutions.",
             align: "right",
-            icon: TeamIcon,
+            icon: () => <img src={groupPhoto} alt="Team" className="section-icon" />,
             buttons: [
                 { label: "Meet Our Team", link: "/people" }
             ]

@@ -464,6 +464,56 @@ body.home-page {
 }
 
 
+/* Add these styles to your Home.css file to make section icons consistent */
+
+/* Common styling for all section icons, regardless of whether they are SVGs or images */
+.section-icon {
+    width: 100%;
+    height: auto;
+    max-width: 550px;
+
+    border-radius: 30px;
+    /* Consistent maximum width */
+    max-height: 350px;
+    /* Consistent maximum height */
+    /* object-fit: contain; */
+    /* Ensures the image maintains its aspect ratio */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Ensure the SVG containers use the same constraints */
+.split-svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: 350px;
+    width: 100%;
+    padding: 2rem;
+}
+
+/* Adjust the SVG icons to match the image icons */
+.split-svg-container svg {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 350px;
+}
+
+/* Specific adjustments for responsive design */
+@media (max-width: 768px) {
+
+    .section-icon,
+    .split-svg-container svg {
+        max-width: 300px;
+        max-height: 250px;
+    }
+
+    .split-svg-container {
+        min-height: 250px;
+    }
+}
 
 
 /* Responsive adjustments */

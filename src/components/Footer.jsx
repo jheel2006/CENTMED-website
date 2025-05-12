@@ -74,7 +74,7 @@ const Footer = () => {
                         </svg>
                     </a>
 
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                    <a href="https://www.linkedin.com/company/centmed/" target="_blank" rel="noopener noreferrer" className="social-icon">
                         <Linkedin color="white" size={24} />
                     </a>
                 </div>
