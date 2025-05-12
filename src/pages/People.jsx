@@ -17,7 +17,7 @@ import SajinaLalImage from "../assets/SajinaLal_image.png";
 
 const sections = [
     {
-        title: "PRINCIPAL INVESTIGATORS (PIs)", people: [
+        title: "PRINCIPAL INVESTIGATORS (PIs & Co-PIs)", people: [
             {
                 name: "Yong-Ak (Rafael) Song",
                 title: "PRINCIPAL INVESTIGATOR",
@@ -109,23 +109,33 @@ const sections = [
                 photo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
             },
             {
-                name: "Vega",
+                name: "Vega Pradana Rachim",
                 title: "RESEARCH STAFF",
                 description: "Dr. Vega Pradana Rachim is a Research Scientist at the Integrated BioElectronics Laboratory, led by Prof. Sohmyung Ha, and the Research Center for Translational Medical Devices (CENTMED) at NYU Abu Dhabi. He earned his Ph.D. in Electronics Engineering in 2019 from Pukyong National University, South Korea, where he developed multimodal wrist-wearable biosensors for non-invasive smart healthcare, including cuffless blood pressure and glucose monitoring. He received the Researcher of the Year award (BK21 PLUS, 2017) and Best Paper Awards (IEEE ICASI, 2017; Korean Sensor Society, 2018). He continued at POSTECH, South Korea, in the Innovative Medical Solution Lab as Postdoctoral Researcher (2019–2021) and Research Assistant Professor (2021–2025), co-leading projects on biosensors, artificial pancreas systems, and diabetes algorithms with Prof. Sung-Min Park and CureStream. He received the PIURI Fellowship (2022–2024) and a Korean NRF grant (2020–2022). His current research focuses on wearable closed-loop therapeutic systems for sleep disorders, integrating neuromodulation, embedded AI, and digital twin modeling for personalized care.",
                 photo: VegaImage
             },
             {
-                name: "Abdel",
+                name: "Abdel-Hameed Dabbour",
                 title: "RESEARCH STAFF",
                 description: "",
                 photo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
             },
             {
-                name: "Prim",
+                name: "Parima Phowarasoontorn",
                 title: "RESEARCH STAFF",
                 description: "Prim is a Research Assistant with a degree in Mechanical Engineering from New York University Abu Dhabi. Her interest lies in the field of medical device technology and additive manufacturing. Prim is designing a medical device with improved fluid drainage efficacy to promote faster healing for post-surgical patients.",
                 photo: PrimImage
             },
+        ]
+    },
+    {
+        title: "ADMINISTRATION", people: [
+            {
+                name: "Sajina Lal",
+                title: "ADMINISTRATION",
+                description: "  ",
+                photo: SajinaLalImage
+            }
         ]
     },
     {
@@ -146,16 +156,7 @@ const sections = [
             }
         ]
     },
-    {
-        title: "ADMINISTRATION", people: [
-            {
-                name: "Sajina Lal",
-                title: "ADMINISTRATION",
-                description: "  ",
-                photo: SajinaLalImage
-            }
-        ]
-    },
+
     {
         title: "ADVISORY BOARD",
         displayAsList: true, // New flag to display as list 

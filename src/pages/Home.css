@@ -463,6 +463,9 @@ body.home-page {
     /* Change from auto to 0 */
 }
 
+
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .landing-wrapper {

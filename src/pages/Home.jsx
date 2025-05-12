@@ -7,6 +7,8 @@ import ResearchIcon from "../components/ResearchIcon";
 import TeamIcon from "../components/TeamIcon";
 import NewsIcon from "../components/NewsIcon";
 import SectionNavigator from "../components/SectionNavigator";
+import researchImage from "../assets/centmed_research_areas.png"; // update path and name accordingly
+
 
 const Home = () => {
     const ecgRef = useRef(null);
@@ -33,7 +35,7 @@ const Home = () => {
             title: "What We Do",
             text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat ex at justo congue, non feugiat ligula fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat ex at justo congue, non feugiat ligula fringilla.",
             align: "left",
-            icon: ResearchIcon,
+            icon: () => <img src={researchImage} alt="Research" className="section-icon" />,
             buttons: [
                 { label: "Research Clusters", link: "/research" }
             ]

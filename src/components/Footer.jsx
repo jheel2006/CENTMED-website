@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import './Footer.css';
 import reactLogo from '../assets/CENTMED_logo_white.png';
 import { Link } from 'react-router-dom';
+import { Instagram, Twitter, Linkedin } from 'lucide-react';
 
 const Footer = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -56,6 +57,17 @@ const Footer = () => {
                     <Link to="/news">News</Link>
                     <Link to="/events">Events</Link>
                     <Link to="/careers">Careers</Link>
+                </div>
+                <div className="social-icons">
+                    <a href="https://www.instagram.com/centmed_nyuad/" target="_blank" rel="noopener noreferrer" className="social-icon">
+                        <Instagram color="white" size={24} />
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                        <Twitter color="white" size={24} />
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                        <Linkedin color="white" size={24} />
+                    </a>
                 </div>
             </div>
         </footer>
