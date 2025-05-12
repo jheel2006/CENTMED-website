@@ -44,13 +44,23 @@ const Research = () => {
         <div className="research-container">
             <ScrollProgress />
             <h1 className="research-title">Research Clusters</h1>
-            <p className="research-description">
-                The center has three disease focus areas: <strong>1) Metabolic</strong>, <strong>2) Cardiovascular</strong>, and <strong>3) Neurological disorders</strong>.
-                These are relevant to Abu Dhabi given the high prevalence of metabolic non-communicable diseases (NCD) such as obesity and diabetes, cardiovascular disease,
-                and the rising prevalence of neurologic disorders. We have established collaborations with endocrinologists, surgeons, cardiologists, neurologists, and
-                gastroenterologists to identify unmet clinical needs addressable through novel medical devices. Each focus area is led by a primary technical lead from NYUAD
-                and a clinical co-lead from Cleveland Clinic Abu Dhabi (CCAD). Six CENTMED PIs contribute a unique technical skillset and work collaboratively on all projects.
-            </p>
+            <div className="research-description">
+                <p>
+                    The center has three disease focus areas:
+                </p>
+                <ul>
+                    <li><strong>Metabolic disorders</strong></li>
+                    <li><strong>Cardiovascular disorders</strong></li>
+                    <li><strong>Neurological disorders</strong></li>
+                </ul>
+                <p>
+                    These are relevant to Abu Dhabi given the high prevalence of metabolic non-communicable diseases (NCD) such as obesity and diabetes, cardiovascular disease,
+                    and the rising prevalence of neurologic disorders. We have established collaborations with endocrinologists, surgeons, cardiologists, neurologists, and
+                    gastroenterologists to identify unmet clinical needs addressable through novel medical devices. Each focus area is led by a primary technical lead from NYUAD
+                    and a clinical co-lead from Cleveland Clinic Abu Dhabi (CCAD). Six CENTMED PIs contribute a unique technical skillset and work collaboratively on all projects.
+                </p>
+            </div>
+
             <div className="research-grid">
                 {clusters.map((cluster, index) => (
                     <motion.div

@@ -10,6 +10,7 @@ import KhalilRamadiImage from "../assets/KhalilRamadi_image.jpeg";
 import DipeshChaudhuryImage from "../assets/DipeshChaudhury_image.jpg";
 import SohmyungHaImage from "../assets/SohmyungHa_image.png";
 import SanjitMajhiImage from "../assets/SanjitMajhi_image.jpg";
+import HananMohammedImage from "../assets/HananMohammed_image.png";
 import PukarMaharjanImage from "../assets/PukarMaharjan_image.jpg";
 import VegaImage from "../assets/Vega_image.jpg";
 import PrimImage from "../assets/Prim_image.jpg";
@@ -26,31 +27,31 @@ const sections = [
             },
             {
                 name: "Khalil Ramadi",
-                title: "PRINCIPAL INVESTIGATOR",
+                title: "CO- PRINCIPAL INVESTIGATOR",
                 description: "Dr. Ramadi is an Assistant Professor of Bioengineering at NYUAD and Director of the Laboratory for Advanced Neuroengineering and Translational Medicine (LANTRN). He is also an affiliated Professor of Radiology at NYU Langone Health and Grossman School of Medicine. Before his faculty appointments, he was an NIH Ruth L. Kirschstein F32 postdoctoral fellow at MIT. Dr. Ramadi earned his PhD in Biomedical Engineering from MIT and Harvard Medical School. His research develops technologies to address clinical challenges and improve health. His lab focuses on ingestible electronic pills and implantable devices for drug delivery and neuromodulation. A board member and former co-Director of MIT Hacking Medicine, he helped launch 50+ companies, raising $250M+. He has mentored 50+ early-stage companies through MIT Sandbox, MIT IDEA2 Global Incubator, and MIT-UM6P Explorer/Accelerator programs. Named a TED Fellow, CIFAR Global Scholar, Forbes 30 Under 30, and MIT Technology Review Innovator Under 35 (MENA), he has received honors including the BMES Career Development Award and a NASA Aeronautics Scholarship.",
                 photo: KhalilRamadiImage
             },
             {
                 name: "Sohmyung Ha",
-                title: "PRINCIPAL INVESTIGATOR",
+                title: "CO- PRINCIPAL INVESTIGATOR",
                 description: "Sohmyung Ha received the BS and MS degrees in Electrical Engineering from KAIST, Korea and the M.S. and Ph.D. degrees in Bioengineering from University of California, San Diego, CA, USA. From 2006 to 2010, he worked at Samsung Electronics as an integrated circuit designer for commercial multimedia devices. Since 2016, he has been with New York University Abu Dhabi, where he is Associate Professor, and also with New York University, where he is Global Network Associate Professor. He currently serves as an associate editor of IEEE Transactions on Biomedical Circuits and Systems, IEEE Open Journal of Solid-State Circuits Society, and Frontiers in Electronics. He is a member of the Analog Signal Processing Technical Committee and the Biomedical and Life Science Circuits and Systems Technical Committee of the IEEE Circuits and Systems Society. He is also a member of the international technical program committee of the International Solid-State Circuits Conference (ISSCC).",
                 photo: SohmyungHaImage
             },
             {
                 name: "Mohammad Qasaimeh",
-                title: "PRINCIPAL INVESTIGATOR",
+                title: "CO- PRINCIPAL INVESTIGATOR",
                 description: "Dr. Mohammad A. Qasaimeh is an Associate Professor of Mechanical Engineering and Bioengineering at New York University Abu Dhabi (NYUAD), UAE, and a Global Network Associate Professor in the Mechanical and Aerospace Engineering and Biomedical Engineering Departments at NYU Tandon School of Engineering, NY, USA. He earned a PhD in Biomedical Engineering from McGill University in Montreal in 2013. During his PhD, he received several prestigious fellowships and awards, including the NSERC Postdoctoral Fellowship and the Alexander Graham Bell Graduate Scholarship. Before joining NYUAD, he was a Postdoctoral Research Associate at MIT and a Research Fellow at Harvard Medical School (Dana-Farber Cancer Institute). Since 2014, Dr. Qasaimeh has led the Advanced Microfluidics and Microdevices Laboratory (AMMLab) at NYUAD. His research focuses on developing microfluidic biochips and microdevices for point-of-care diagnostics and biomedical applications. His work has been published in peer-reviewed journals, including Small, Advanced Science, Advanced Materials Technologies, Microsystems & Nanoengineering, and Lab on a Chip.",
                 photo: MohdQasaimehImage
             },
             {
                 name: "Panče Naumov",
-                title: "PRINCIPAL INVESTIGATOR",
+                title: "CO- PRINCIPAL INVESTIGATOR",
                 description: "Panče Naumov is a full professor of chemistry with tenure at New York University Abu Dhabi (NYUAD), where he also serves as a Global Network Professor and Director of the NYUAD Center for Smart Engineering Materials (CSEM). He leads the Smart Materials Lab, recognized as the top research team in the UAE in chemistry and materials science. Naumov obtained his PhD from the Tokyo Institute of Technology in 2004 and has held research positions in Japan before joining NYUAD. With approximately 300 publications and over USD 15 million in funding, he has delivered around 400 presentations, mentoring more than 60 students since 2012. Naumov serves on editorial boards for several journals and holds leadership roles in various scientific organizations, including the founder of the UAE Chapter of the American Chemical Society, founder of the Emirates Crystallographic Society and a number of other roles. His accolades include multiple fellowships and prestigious awards, recognizing his exceptional contributions to the field and the UAE.",
                 photo: PanceNaumovImage
             },
             {
                 name: "Dipesh Chaudhury",
-                title: "PRINCIPAL INVESTIGATOR",
+                title: "CO- PRINCIPAL INVESTIGATOR",
                 description: "",
                 photo: DipeshChaudhuryImage
             },
@@ -94,7 +95,7 @@ const sections = [
                 name: "Hanan Mohammed",
                 title: "RESEARCH STAFF",
                 description: "Hanan is postdoctoral research associate in the LANTRN Lab and possesses a multidisciplinary background that overlaps material science, biomedical & electrical engineering. She has extensive experience in clean room-based nanofabrication techniques, 3D printing, material characterization & imaging. Hanan pursued her PhD in Electrical Engineering from the Sensing, Magnetism & Microsystems (SMM) Group at King Abdullah University of Science & Technology (KSA) and prior to that obtained her Masters in Nanoscale Science & Technology from University of Leeds (UK). Hanan is certified in innovation & technology transfer from ASTP & Cornell University and has served as a mentor at several international hackathons such as MIT, Impact Hub UK, Teens in AI etc. She is passionate about science engagement & communication and has won several awards for it such as Falling Walls Lab, IET PATW etc.",
-                photo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+                photo: HananMohammedImage
             },
             {
                 name: "Pukar Maharjan",

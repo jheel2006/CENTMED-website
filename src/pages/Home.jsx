@@ -33,7 +33,7 @@ const Home = () => {
         {
             id: 1,
             title: "What We Do",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat ex at justo congue, non feugiat ligula fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat ex at justo congue, non feugiat ligula fringilla.",
+            text: "CENTMED develops innovative medical devices through research that brings together engineering, biology, and clinical needs. We focus on metabolic, cardiovascular, and neurological disorders that are especially relevant to Abu Dhabi.",
             align: "left",
             icon: () => <img src={researchImage} alt="Research" className="section-icon" />,
             buttons: [
@@ -43,7 +43,7 @@ const Home = () => {
         {
             id: 2,
             title: "Who We Are",
-            text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+            text: "We’re a team of researchers, clinicians, and students working together to improve healthcare through technology. With different areas of expertise, we collaborate across disciplines to turn ideas into practical solutions.",
             align: "right",
             icon: TeamIcon,
             buttons: [
@@ -53,7 +53,7 @@ const Home = () => {
         {
             id: 3,
             title: "What's New",
-            text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            text: "Check out the latest from CENTMED, including research highlights, student projects, and upcoming events. We regularly share updates on our work and collaborations within the medical and academic community.",
             align: "left",
             icon: NewsIcon,
             buttons: [

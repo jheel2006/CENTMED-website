@@ -3,6 +3,7 @@ import { motion } from "framer-motion"; // Import motion from framer-motion
 import "./Events.css";
 import ScrollProgress from "../components/ScrollProgress.jsx";
 import { CalendarDays, Users, University } from "lucide-react";
+import AliAsgarBhagatImage from "../assets/AliAsgarBhagat_image.png";
 
 const eventData = [
     {

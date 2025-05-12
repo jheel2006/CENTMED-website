@@ -138,6 +138,10 @@ const CardiovascularCluster = () => {
                                 These advancements extend to laparoscopy, endoscopy, and robotic-assisted surgeries, where force control and tissue assessment are equally critical. By combining smart sensing technology with improved ergonomics, this project paves the way for safer and more effective surgical solutions.
                             </p>
                         </div>
+                        <div className="project-personnel">
+                            <h3>Research Personnel</h3>
+                            <p>Mohammad Qasaimeh, Co- Principal Investigator</p>
+                        </div>
                     </div>
                     <div className="project-images-grid">
                         <div className="project-image">
