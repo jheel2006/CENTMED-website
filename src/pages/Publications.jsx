@@ -18,6 +18,13 @@ const Publications = () => {
                 year: 2025,
                 doi: "https://doi.org/10.1039/D4LC00843J",
             },
+            {
+                title: "Investigating the Mechanism of Ion Concentration Polarization within Nanofluidic Hydrogel Membranes: Experiment and Simulation",
+                authors: "H. Aljayyousi, J. Kim, S. Kirmizialtin, Y.-A. Song",
+                journal: "Advanced Materials Interfaces",
+                year: 2025,
+                doi: "https://doi.org/10.1002/admi.202401018",
+            },
         ],
         conference: [
             {
