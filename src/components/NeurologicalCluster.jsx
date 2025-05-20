@@ -36,7 +36,7 @@ const NeurologicalCluster = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
             >
-                <h1>Research Cluster 1: Neurological Disorders</h1>
+                <h1>Research Cluster 3: Neurological Disorders</h1>
 
                 <div className="cluster-featured-image">
                     <img src={neurologicalFeatured} alt="Neurological Research" />

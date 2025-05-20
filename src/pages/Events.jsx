@@ -3,7 +3,9 @@ import { motion } from "framer-motion"; // Import motion from framer-motion
 import "./Events.css";
 import ScrollProgress from "../components/ScrollProgress.jsx";
 import { CalendarDays, Users, University } from "lucide-react";
-import AliAsgarBhagatImage from "../assets/AliAsgarBhagat_image.png";
+import AliAsgarBhagatImage from "../assets/AliAsgarBhagat_image.jpg";
+import SamuelTangImage from "../assets/SamuelTang_image.jpg";
+import QiaoquiangGanImage from "../assets/QiaoqiangGan_image.jpg";
 
 const eventData = [
     {
@@ -12,7 +14,7 @@ const eventData = [
         speaker: "Ali Asgar Bhagat",
         date: "Jan 29th, 2025",
         university: "National University of Singapore",
-        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+        image: AliAsgarBhagatImage,
     },
     {
         category: "CENTMED Seminar Series",
@@ -20,7 +22,7 @@ const eventData = [
         speaker: "Kea-Tiong (Samuel) Tang",
         date: "Dec 18th, 2024",
         university: "National Tsing Hua University, Taiwan",
-        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+        image: SamuelTangImage,
     },
     {
         category: "CENTMED Seminar Series",
@@ -28,7 +30,7 @@ const eventData = [
         speaker: "Qiaoqiang Gan",
         date: "Oct 4th, 2024",
         university: "KAUST, Saudi Arabia",
-        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+        image: QiaoquiangGanImage,
     },
 ];
 

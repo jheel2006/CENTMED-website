@@ -30,7 +30,7 @@ const sections = [
             {
                 name: "Khalil Ramadi",
                 title: "CO- PRINCIPAL INVESTIGATOR",
-                description: "Dr. Ramadi is an Assistant Professor of Bioengineering at NYUAD and Director of the Laboratory for Advanced Neuroengineering and Translational Medicine (LANTRN). He is also an affiliated Professor of Radiology at NYU Langone Health and Grossman School of Medicine. Before his faculty appointments, he was an NIH Ruth L. Kirschstein F32 postdoctoral fellow at MIT. Dr. Ramadi earned his PhD in Biomedical Engineering from MIT and Harvard Medical School. His research develops technologies to address clinical challenges and improve health. His lab focuses on ingestible electronic pills and implantable devices for drug delivery and neuromodulation. A board member and former co-Director of MIT Hacking Medicine, he helped launch 50+ companies, raising $250M+. He has mentored 50+ early-stage companies through MIT Sandbox, MIT IDEA2 Global Incubator, and MIT-UM6P Explorer/Accelerator programs. Named a TED Fellow, CIFAR Global Scholar, Forbes 30 Under 30, and MIT Technology Review Innovator Under 35 (MENA), he has received honors including the BMES Career Development Award and a NASA Aeronautics Scholarship.",
+                description: "Dr. Ramadi is an Assistant Professor of Bioengineering at NYUAD and Director of the Laboratory for Advanced Neuroengineering and Translational Medicine (LANTRN). He is also affiliated with NYU Langone Health and the Grossman School of Medicine. Prior to his faculty roles, he was an NIH F32 postdoctoral fellow at MIT and earned his PhD in Biomedical Engineering from MIT and Harvard Medical School. His research focuses on technologies for clinical challenges, including ingestible pills and implantable devices for drug delivery and neuromodulation. A board member and former co-Director of MIT Hacking Medicine, he helped launch 50+ companies raising over $250M, and has mentored dozens more through MIT programs. Named a TED Fellow, CIFAR Global Scholar, Forbes 30 Under 30, and MIT Technology Review Innovator Under 35 (MENA), his honors include the BMES Career Development Award and a NASA Aeronautics Scholarship.",
                 photo: KhalilRamadiImage
             },
             {
@@ -147,8 +147,8 @@ const sections = [
         title: "ADMINISTRATION", people: [
             {
                 name: "Sajina Lal",
-                title: "ADMINISTRATION",
-                description: "  ",
+                title: "CENTER MANAGER",
+                description: "Sajina is an enthusiastic professional who stepped into the role of CENTMED's Center Manager recently, eager to inspire teams and drive meaningful results, the same as she performed in her previous role in the NYUAD engineering division since 2018. Along with an MBA degree in Operations Management and a Bachelor's degree in Polymer Chemistry, she will bring fresh perspectives and a commitment to fostering a positive work environment. She has previously worked with the Abu Dhabi Education Council and the Masdar Institute of Science & Technology and possesses excellent knowledge of higher education administration, university operations, policies and procedures.",
                 photo: SajinaLalImage
             }
         ]
