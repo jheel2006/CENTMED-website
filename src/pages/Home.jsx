@@ -22,27 +22,20 @@ const newsItems = [
     },
     {
         id: 2,
-        title: "CENTMED Hosts International Medical Device Symposium",
-        subtitle: "Leading researchers gather to discuss the future of medical technology",
-        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
-        link: "/news/symposium-2025"
-    },
-    {
-        id: 3,
         title: "Research Collaboration with Cleveland Clinic Abu Dhabi",
         subtitle: "New partnership focuses on cardiovascular device development",
         image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
         link: "/news/cleveland-clinic-partnership"
     },
     {
-        id: 4,
+        id: 3,
         title: "CENTMED Student Team Wins Innovation Award",
         subtitle: "Undergraduate project recognized for excellence in neurological monitoring",
         image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
         link: "/news/student-innovation-award"
     },
     {
-        id: 5,
+        id: 4,
         title: "New Research Grant for Metabolic Health Devices",
         subtitle: "UAE Ministry of Health funds CENTMED's latest research initiative",
         image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",

@@ -588,7 +588,7 @@ body.home-page {
 .news-card {
     flex: 1;
     max-width: 350px;
-    border-radius: 8px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     background-color: white;
