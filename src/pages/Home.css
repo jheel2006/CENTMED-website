@@ -222,7 +222,7 @@ body.home-page {
 }
 
 .block-section-text {
-    text-align: left;
+    text-align: center;
     font-size: 1.1rem;
 }
 
@@ -552,5 +552,174 @@ body.home-page {
 
     .heart-animation-container {
         height: 40vh;
+    }
+}
+
+/* Add this to your Home.css file */
+
+/* News Carousel Styles */
+.news-carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.news-carousel-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.news-carousel-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.news-cards-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.news-card {
+    flex: 1;
+    max-width: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.news-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-card-content {
+    padding: 1.25rem;
+}
+
+.news-card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--dark-blue);
+}
+
+.news-card-subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.news-card-link {
+    display: inline-block;
+    color: var(--teal);
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+}
+
+.news-card-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--teal);
+    transition: width 0.3s ease;
+    color: var(--teal);
+}
+
+.news-card-link:hover:after {
+    width: 100%;
+}
+
+.carousel-arrow {
+    background: var(--teal);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.carousel-arrow:hover {
+    background-color: var(--purple);
+}
+
+.carousel-arrow-left {
+    left: -40px;
+}
+
+.carousel-arrow-right {
+    right: -40px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+    .news-cards-container {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 1rem;
+    }
+
+    .news-card {
+        scroll-snap-align: center;
+        min-width: 280px;
+    }
+
+    .carousel-arrow {
+        display: none;
+        /* Hide arrows on smaller screens, use native scrolling */
+    }
+}
+
+@media (max-width: 768px) {
+    .news-carousel-container {
+        padding: 1rem 0.5rem;
+    }
+
+    .news-cards-container {
+        gap: 1rem;
+    }
+
+    .news-card {
+        min-width: 260px;
+    }
+}
+
+@media (max-width: 576px) {
+    .news-card-content {
+        padding: 1rem;
+    }
+
+    .news-card-title {
+        font-size: 1.1rem;
     }
 }
