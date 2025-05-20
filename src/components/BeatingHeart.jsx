@@ -10,8 +10,8 @@ const BeatingHeart = () => {
         const svg = d3.select(svgRef.current);
         const group = svg.selectAll("g");
 
-        const fast = { scaleUp: 200, scaleDown: 200, pause: 200 };
-        const slow = { scaleUp: 400, scaleDown: 400, pause: 600 };
+        const fast = { scaleUp: 200, scaleDown: 200, pause: 50 };
+        const slow = { scaleUp: 400, scaleDown: 400, pause: 400 };
         const config = speed ? fast : slow;
 
         const animate = () => {

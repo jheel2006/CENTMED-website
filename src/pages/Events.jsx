@@ -7,7 +7,7 @@ import AliAsgarBhagatImage from "../assets/AliAsgarBhagat_image.png";
 
 const eventData = [
     {
-        category: "Seminar",
+        category: "CENTMED Seminar Series",
         title: "Accelerating Research Commercialization – From Bench to Bank",
         speaker: "Ali Asgar Bhagat",
         date: "Jan 29th, 2025",
@@ -15,7 +15,7 @@ const eventData = [
         image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
     },
     {
-        category: "Seminar",
+        category: "CENTMED Seminar Series",
         title: "Miniature Electronic Nose System and Applications",
         speaker: "Kea-Tiong (Samuel) Tang",
         date: "Dec 18th, 2024",
@@ -23,7 +23,7 @@ const eventData = [
         image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
     },
     {
-        category: "Seminar",
+        category: "CENTMED Seminar Series",
         title: "Light-matter-interaction within extreme dimensions for optical biosensing",
         speaker: "Qiaoqiang Gan",
         date: "Oct 4th, 2024",

@@ -13,7 +13,7 @@ const newsItems = [
         date: "May 15, 2025",
         image: xpanseLizardImage,
         link: "https://www.xpanse.world/insight/brain-organoids-lizard-tails-biomimicry",
-        excerpt: "Dr. Rafael Song shares his interdisciplinary approach to innovation — from growing brain organoids to testing lemon peels and lizard tails for smarter biomaterials. This feature explores his team’s use of AI, synthetic tissues, and nature-inspired designs to shape the future of medical devices.",
+        excerpt: "Dr. Rafael Song shares his interdisciplinary approach to innovation — from growing brain organoids to testing lemon peels and lizard tails for smarter biomaterials. This feature explores his team's use of AI, synthetic tissues, and nature-inspired designs to shape the future of medical devices.",
         category: "Research"
     },
 
@@ -37,46 +37,46 @@ const newsItems = [
         excerpt: "A team of undergraduate students working at CENTMED has received the prestigious UAE Innovation Award for their groundbreaking neurological monitoring device. The team's project, NeuroSense, offers a non-invasive approach to monitoring brain activity with applications for early detection of neurological disorders.",
         category: "Awards"
     },
-    {
-        id: 4,
-        title: "New Research Grant for Metabolic Health Devices",
-        subtitle: "UAE Ministry of Health funds CENTMED's latest research initiative",
-        date: "February 15, 2025",
-        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
-        link: "/news/metabolic-research-grant",
-        excerpt: "CENTMED has secured a substantial research grant from the UAE Ministry of Health to advance the development of innovative metabolic health devices. The funding will support a three-year research program focused on creating affordable and accessible tools for diabetes management and metabolic syndrome monitoring.",
-        category: "Funding"
-    },
-    {
-        id: 5,
-        title: "CENTMED Launches New Graduate Fellowship Program",
-        subtitle: "Supporting the next generation of medical device innovators",
-        date: "January 30, 2025",
-        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
-        link: "/news/fellowship-program-launch",
-        excerpt: "CENTMED is excited to announce the launch of a new graduate fellowship program designed to nurture emerging talent in medical device engineering. The program will provide comprehensive funding and mentorship opportunities for graduate students pursuing innovative research in translational medical devices.",
-        category: "Education"
-    },
-    {
-        id: 6,
-        title: "Breakthrough in Wearable Diabetes Monitoring Technology",
-        subtitle: "CENTMED researchers develop non-invasive glucose monitoring prototype",
-        date: "January 12, 2025",
-        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
-        link: "/news/wearable-diabetes-monitoring",
-        excerpt: "A research team at CENTMED has achieved a significant breakthrough in wearable diabetes monitoring technology. Their prototype device enables continuous glucose monitoring without the need for blood samples, representing a major advance in diabetes management technology with particular relevance to the UAE's public health priorities.",
-        category: "Research"
-    },
-    {
-        id: 7,
-        title: "CENTMED Annual Report Highlights Impact on Regional Healthcare",
-        subtitle: "2024 achievements demonstrate center's growing influence",
-        date: "December 20, 2024",
-        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
-        link: "/news/annual-report-2024",
-        excerpt: "CENTMED has released its annual report for 2024, showcasing the center's expanding impact on healthcare innovation in Abu Dhabi and the broader UAE region. The report highlights key research achievements, clinical partnerships, and educational initiatives that have contributed to advancing medical device technology and improving patient outcomes.",
-        category: "Reports"
-    }
+    // {
+    //     id: 4,
+    //     title: "New Research Grant for Metabolic Health Devices",
+    //     subtitle: "UAE Ministry of Health funds CENTMED's latest research initiative",
+    //     date: "February 15, 2025",
+    //     image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+    //     link: "/news/metabolic-research-grant",
+    //     excerpt: "CENTMED has secured a substantial research grant from the UAE Ministry of Health to advance the development of innovative metabolic health devices. The funding will support a three-year research program focused on creating affordable and accessible tools for diabetes management and metabolic syndrome monitoring.",
+    //     category: "Funding"
+    // },
+    // {
+    //     id: 5,
+    //     title: "CENTMED Launches New Graduate Fellowship Program",
+    //     subtitle: "Supporting the next generation of medical device innovators",
+    //     date: "January 30, 2025",
+    //     image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+    //     link: "/news/fellowship-program-launch",
+    //     excerpt: "CENTMED is excited to announce the launch of a new graduate fellowship program designed to nurture emerging talent in medical device engineering. The program will provide comprehensive funding and mentorship opportunities for graduate students pursuing innovative research in translational medical devices.",
+    //     category: "Education"
+    // },
+    // {
+    //     id: 6,
+    //     title: "Breakthrough in Wearable Diabetes Monitoring Technology",
+    //     subtitle: "CENTMED researchers develop non-invasive glucose monitoring prototype",
+    //     date: "January 12, 2025",
+    //     image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+    //     link: "/news/wearable-diabetes-monitoring",
+    //     excerpt: "A research team at CENTMED has achieved a significant breakthrough in wearable diabetes monitoring technology. Their prototype device enables continuous glucose monitoring without the need for blood samples, representing a major advance in diabetes management technology with particular relevance to the UAE's public health priorities.",
+    //     category: "Research"
+    // },
+    // {
+    //     id: 7,
+    //     title: "CENTMED Annual Report Highlights Impact on Regional Healthcare",
+    //     subtitle: "2024 achievements demonstrate center's growing influence",
+    //     date: "December 20, 2024",
+    //     image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+    //     link: "/news/annual-report-2024",
+    //     excerpt: "CENTMED has released its annual report for 2024, showcasing the center's expanding impact on healthcare innovation in Abu Dhabi and the broader UAE region. The report highlights key research achievements, clinical partnerships, and educational initiatives that have contributed to advancing medical device technology and improving patient outcomes.",
+    //     category: "Reports"
+    // }
 ];
 
 const News = () => {
@@ -120,10 +120,12 @@ const News = () => {
                     <div key={item.id} className="news-item">
                         <div className="news-item-image-container">
                             <img src={item.image} alt={item.title} className="news-item-image" />
-                            <span className="news-item-category">{item.category}</span>
                         </div>
                         <div className="news-item-content">
-                            <span className="news-item-date">{item.date}</span>
+                            <div className="news-item-header">
+                                <span className="news-item-date">{item.date}</span>
+                                <span className="news-item-category">{item.category}</span>
+                            </div>
                             <h2 className="news-item-title">{item.title}</h2>
                             <p className="news-item-subtitle">{item.subtitle}</p>
                             <p className="news-item-excerpt">{item.excerpt}</p>

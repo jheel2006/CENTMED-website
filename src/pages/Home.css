@@ -85,11 +85,17 @@ body.home-page {
     /* Changed from visible to hidden to prevent overflow */
 }
 
+
+
 /* Make the heart SVG larger */
 .heart-animation-container svg {
     width: 100% !important;
     height: 100% !important;
     max-height: 100vh;
+}
+
+.heart-animation-container svg:hover {
+    cursor: pointer;
 }
 
 /* ECG Line Styles */
@@ -470,7 +476,7 @@ body.home-page {
 .section-icon {
     width: 100%;
     height: auto;
-    max-width: 550px;
+    max-width: 630px;
 
     border-radius: 30px;
     /* Consistent maximum width */
