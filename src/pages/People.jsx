@@ -9,6 +9,9 @@ import MohdQasaimehImage from "../assets/MohdQasaimeh_image.jpg";
 import KhalilRamadiImage from "../assets/KhalilRamadi_image.jpeg";
 import DipeshChaudhuryImage from "../assets/DipeshChaudhury_image.jpg";
 import SohmyungHaImage from "../assets/SohmyungHa_image.png";
+import HusseinSaadiImage from "../assets/HusseinSaadi_image.png";
+import FirasAlBadarinImage from "../assets/FirasAlBadarin_image.png";
+import FlorianRoserImage from "../assets/FlorianRoser_image.png";
 import SanjitMajhiImage from "../assets/SanjitMajhi_image.jpg";
 import HananMohammedImage from "../assets/HananMohammed_image.png";
 import PukarMaharjanImage from "../assets/PukarMaharjan_image.jpg";
@@ -17,6 +20,8 @@ import PrimImage from "../assets/Prim_image.jpg";
 import AyoubGliaImage from "../assets/AyoubGlia_image.jpg";
 import WaelOthmanImage from "../assets/WaelOthman_image.jpg";
 import SajinaLalImage from "../assets/SajinaLal_image.png";
+import CarlosAbrilImage from "../assets/CarlosAbril_image.png";
+import JuanBarajasGamboaImage from "../assets/JuanBarajasGamboa_image.png";
 
 const sections = [
     {
@@ -68,19 +73,19 @@ const sections = [
                 name: "Hussein Saadi, MD",
                 title: "CO-INVESTIGATOR - CLEVELAND CLINIC ABU DHABI",
                 // description: "Cardiology Department",
-                photo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+                photo: HusseinSaadiImage
             },
             {
                 name: "Firas Al Badarin, MD",
                 title: "CO-INVESTIGATOR - CLEVELAND CLINIC ABU DHABI",
                 // description: "Respiratory Institute",
-                photo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+                photo: FirasAlBadarinImage
             },
             {
                 name: "Florian Roser, MD, PhD",
                 title: "CO-INVESTIGATOR - CLEVELAND CLINIC ABU DHABI",
                 // description: "Heart, Vascular & Thoracic Institute",
-                photo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+                photo: FlorianRoserImage
             },
 
         ]
@@ -161,13 +166,13 @@ const sections = [
                 name: "Carlos Abril",
                 title: "COLLABORATOR - CLEVELAND CLINIC ABU DHABI",
                 description: "Develops cutting-edge therapeutic medical technologies.",
-                photo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+                photo: CarlosAbrilImage
             },
             {
                 name: "Juan S. Barajas-Gamboa",
                 title: "COLLABORATOR - CLEVELAND CLINIC ABU DHABI",
                 description: "Develops cutting-edge therapeutic medical technologies.",
-                photo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+                photo: JuanBarajasGamboaImage
             }
         ]
     },

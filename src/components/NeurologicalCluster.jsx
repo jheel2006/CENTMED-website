@@ -103,7 +103,7 @@ const NeurologicalCluster = () => {
                         </div>
                         <div className="project-personnel">
                             <h3>Research Personnel</h3>
-                            <p>Abdel Hameed Dabbour, Postdoctoral Research Associate</p>
+                            <p>Dr. Abdel Hameed Dabbour, Postdoctoral Associate</p>
                         </div>
                     </div>
                 </motion.div>

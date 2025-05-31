@@ -446,7 +446,7 @@ body.home-page {
 
 /* Remove the auto margins that might be pushing content */
 .title-container h1 {
-    font-size: 3.5rem;
+    font-size: 3.6rem;
     font-weight: bold;
     color: var(--background);
     line-height: 1.2;
@@ -460,7 +460,7 @@ body.home-page {
 
 .title-container .subtitle {
 
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.6;
     color: #c5c5c5;
     text-align: left;

@@ -78,7 +78,7 @@ const MetabolicCluster = () => {
                         </div>
                         <div className="project-personnel">
                             <h3>Research Personnel</h3>
-                            <p>Parima Phowarasoontorn</p>
+                            <p>Parima Phowarasoontorn, Research Assistant</p>
                         </div>
                     </div>
                 </motion.div>

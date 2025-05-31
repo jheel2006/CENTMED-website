@@ -140,7 +140,7 @@ const CardiovascularCluster = () => {
                         </div>
                         <div className="project-personnel">
                             <h3>Research Personnel</h3>
-                            <p>Mohammad Qasaimeh, Co- Principal Investigator</p>
+                            <p>Dr. Ayoub Glia, Postdoctoral Associate</p>
                         </div>
                     </div>
                     <div className="project-images-grid">
