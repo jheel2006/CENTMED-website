@@ -586,7 +586,7 @@ body.home-page {
 
 .news-cards-container {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     justify-content: center;
     width: 100%;
 }
@@ -678,11 +678,11 @@ body.home-page {
 }
 
 .carousel-arrow-left {
-    left: -40px;
+    left: -60px;
 }
 
 .carousel-arrow-right {
-    right: -40px;
+    right: -60px;
 }
 
 /* Media Queries for Responsiveness */

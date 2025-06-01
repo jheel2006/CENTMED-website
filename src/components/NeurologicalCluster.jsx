@@ -44,7 +44,7 @@ const NeurologicalCluster = () => {
             </motion.div>
 
             <div className="projects-container">
-                {/* Project 1 */}
+                {/* Project 1
                 <motion.div
                     className="project-card"
                     initial={{ opacity: 0, y: 30 }}
@@ -85,7 +85,7 @@ const NeurologicalCluster = () => {
                         </div>
                     </div>
                     <p className="image-caption">Graphic abstract for AI-assisted cognitive assessment platform</p>
-                </motion.div>
+                </motion.div> */}
 
                 {/* Project 2 */}
                 <motion.div
@@ -94,7 +94,7 @@ const NeurologicalCluster = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
                 >
-                    <h2>Project 2: Implantable Shunt for Hydrocephalus</h2>
+                    <h2>Project 1: Implantable Shunt for Hydrocephalus</h2>
                     <div className="project-content">
                         <div className="project-description">
                             <p>

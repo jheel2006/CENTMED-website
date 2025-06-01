@@ -30,9 +30,9 @@ const newsItems = [
     {
         id: 3,
         title: "CENTMED Student Team Wins Innovation Award",
-        subtitle: "Undergraduate project recognized for excellence in neurological monitoring",
+        subtitle: "NYUAD duo awarded for groundbreaking dementia detection software at DOH innovation challenge.",
         image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
-        link: "/news/student-innovation-award"
+        link: "https://nyuad.nyu.edu/en/academics/divisions/engineering/engineering-awards-successes.html"
     },
     {
         id: 4,

@@ -30,11 +30,11 @@ const newsItems = [
     {
         id: 3,
         title: "CENTMED Student Team Wins Innovation Award",
-        subtitle: "Undergraduate project recognized for excellence in neurological monitoring",
-        date: "March 22, 2025",
+        subtitle: "NYUAD duo awarded for groundbreaking dementia detection software at DOH innovation challenge.",
+        date: "November 20, 2024",
         image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
-        link: "/news/student-innovation-award",
-        excerpt: "A team of undergraduate students working at CENTMED has received the prestigious UAE Innovation Award for their groundbreaking neurological monitoring device. The team's project, NeuroSense, offers a non-invasive approach to monitoring brain activity with applications for early detection of neurological disorders.",
+        link: "https://nyuad.nyu.edu/en/academics/divisions/engineering/engineering-awards-successes.html",
+        excerpt: "The NYUAD student team of Maksat Khobdabayev and Hyun Woo Lim, supervised by CENTMED, won the first prize at the Abu Dhabi Academic Healthcare Innovation Challenge by the Department of Health (DOH). The team developed an early dementia detection software. The official award ceremony was held on Nov. 20th 2024 at the St. Regis Saadiyat Island.",
         category: "Awards"
     },
     // {
