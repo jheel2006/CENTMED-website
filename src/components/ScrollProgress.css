@@ -23,3 +23,9 @@
     will-change: height;
     /* Optimizes animations for smoother transitions */
 }
+
+@media screen and (max-width: 768px) {
+    .scroll-progress-container {
+        display: none;
+    }
+}

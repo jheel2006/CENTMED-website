@@ -11,35 +11,64 @@
     width: 100%;
     background-color: var(--background);
     z-index: 1000;
-
 }
 
 .centmed-logo img {
     height: 60px;
     width: auto;
     padding: 1.2rem;
-    /* Add padding around the logo */
 }
 
+/* Hamburger Menu Button */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: var(--purple);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+/* Hamburger animation when active */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
 
 /* Right side: Navigation Links */
 .nav-links {
     display: flex;
     gap: 2.5rem;
-    /* Space between links */
 }
 
 /* Navigation items */
 .nav-item {
     color: var(--purple);
-    /* Purple color for text */
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 500;
     position: relative;
-    /* Ensure underline stays under individual words */
     padding-bottom: 4px;
-    /* Space for underline effect */
 }
 
 /* Underline effect */
@@ -51,7 +80,6 @@
     width: 0%;
     height: 2.5px;
     background-color: var(--teal);
-    /* Teal underline */
     transition: width 0.3s ease-out, transform 0.3s ease-out;
     transform: translateX(-50%);
 }
@@ -65,4 +93,93 @@
 .nav-item:hover::after {
     width: 100%;
     transform: translateX(-50%);
+}
+
+/* Overlay for mobile menu */
+.nav-overlay {
+    display: none;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 0.1rem 1rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 80%;
+        max-width: 300px;
+        background-color: var(--background);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 100px;
+        gap: 2rem;
+        transition: right 0.3s ease;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .nav-links-open {
+        right: 0;
+    }
+
+    .nav-item {
+        font-size: 1.4rem;
+        padding: 1rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-item::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Overlay background when menu is open */
+    .nav-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+    }
+}
+
+/* Tablet and smaller desktop styles */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .nav-links {
+        gap: 1.5rem;
+    }
+
+    .nav-item {
+        font-size: 1.1rem;
+    }
+}
+
+/* Small mobile styles */
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 0.1rem 0.5rem;
+    }
+
+    .centmed-logo img {
+        height: 50px;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        width: 90%;
+    }
 }
