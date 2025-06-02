@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./News.css";
 import ScrollProgress from "../components/ScrollProgress.jsx";
 import xpanseLizardImage from "../assets/xpanse_lizards_image.jpg";
+import DOHInnovationChallengeImage from "../assets/DOH_innovation_challenge.png"
 
 // News data - expanded from your home page
 const newsItems = [
@@ -32,7 +33,7 @@ const newsItems = [
         title: "CENTMED Student Team Wins Innovation Award",
         subtitle: "NYUAD duo awarded for groundbreaking dementia detection software at DOH innovation challenge.",
         date: "November 20, 2024",
-        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+        image: DOHInnovationChallengeImage,
         link: "https://nyuad.nyu.edu/en/academics/divisions/engineering/engineering-awards-successes.html",
         excerpt: "The NYUAD student team of Maksat Khobdabayev and Hyun Woo Lim, supervised by CENTMED, won the first prize at the Abu Dhabi Academic Healthcare Innovation Challenge by the Department of Health (DOH). The team developed an early dementia detection software. The official award ceremony was held on Nov. 20th 2024 at the St. Regis Saadiyat Island.",
         category: "Awards"

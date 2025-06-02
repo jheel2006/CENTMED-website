@@ -10,6 +10,7 @@ import SectionNavigator from "../components/SectionNavigator";
 import researchImage from "../assets/centmed_research_areas.png";
 import groupPhoto from "../assets/GroupPhoto.jpg";
 import xpanseLizardImage from "../assets/xpanse_lizards_image.jpg";
+import DOHInnovationChallengeImage from "../assets/DOH_innovation_challenge.png"
 
 // Sample news data - replace with your actual data
 const newsItems = [
@@ -31,7 +32,7 @@ const newsItems = [
         id: 3,
         title: "CENTMED Student Team Wins Innovation Award",
         subtitle: "NYUAD duo awarded for groundbreaking dementia detection software at DOH innovation challenge.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+        image: DOHInnovationChallengeImage,
         link: "https://nyuad.nyu.edu/en/academics/divisions/engineering/engineering-awards-successes.html"
     },
     {
