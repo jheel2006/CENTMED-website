@@ -215,6 +215,11 @@ const sections = [
                 name: "Sultan Haider",
                 title: "Advisory Board Member",
                 description: "Siemens Healthineers, Germany",
+            },
+            {
+                name: "Matthew Kroh",
+                title: "Advisory Board Member",
+                description: "Chief Medical Officer, Digestive Disease Institute, Cleveland Clinic Lerner College of Medicine, Cleveland, USA",
             }
         ]
     }

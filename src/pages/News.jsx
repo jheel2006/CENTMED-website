@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./News.css";
 import ScrollProgress from "../components/ScrollProgress.jsx";
 import xpanseLizardImage from "../assets/xpanse_lizards_image.jpg";
+import advancedMaterialsInterfacesImage from "../assets/advanced_materials_interfaces_image.jpg"
 import DOHInnovationChallengeImage from "../assets/DOH_innovation_challenge.png"
 
 // News data - expanded from your home page
@@ -20,13 +21,13 @@ const newsItems = [
 
     {
         id: 2,
-        title: "Research Collaboration with Cleveland Clinic Abu Dhabi",
-        subtitle: "New partnership focuses on cardiovascular device development",
-        date: "April 10, 2025",
-        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
-        link: "/news/cleveland-clinic-partnership",
+        title: "Publication in Advanced Materials Interfaces",
+        subtitle: "Study explores ion concentration polarization using experiments and molecular simulations",
+        date: "May 05, 2025",
+        image: advancedMaterialsInterfacesImage,
+        link: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/admi.202401018",
         excerpt: "CENTMED is proud to announce a new collaborative partnership with Cleveland Clinic Abu Dhabi. This strategic alliance will focus on developing next-generation cardiovascular devices tailored to address regional health challenges, combining CENTMED's engineering expertise with Cleveland Clinic's clinical excellence.",
-        category: "Partnerships"
+        category: "Research"
     },
     {
         id: 3,

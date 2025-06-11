@@ -23,10 +23,10 @@ const newsItems = [
     },
     {
         id: 2,
-        title: "Research Collaboration with Cleveland Clinic Abu Dhabi",
-        subtitle: "New partnership focuses on cardiovascular device development",
+        title: "Publication in Advanced Materials Interfaces",
+        subtitle: "Study explores ion concentration polarization using experiments and molecular simulations",
         image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
-        link: "/news/cleveland-clinic-partnership"
+        link: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/admi.202401018"
     },
     {
         id: 3,
@@ -37,11 +37,11 @@ const newsItems = [
     },
     {
         id: 4,
-        title: "New Research Grant for Metabolic Health Devices",
-        subtitle: "UAE Ministry of Health funds CENTMED's latest research initiative",
+        title: "Research Collaboration with Cleveland Clinic Abu Dhabi",
+        subtitle: "New partnership focuses on cardiovascular device development",
         image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
-        link: "/news/metabolic-research-grant"
-    }
+        link: "/news/cleveland-clinic-partnership"
+    },
 ];
 
 // News Carousel Component
