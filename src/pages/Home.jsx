@@ -10,6 +10,7 @@ import SectionNavigator from "../components/SectionNavigator";
 import researchImage from "../assets/centmed_research_areas.png";
 import groupPhoto from "../assets/GroupPhoto.jpg";
 import xpanseLizardImage from "../assets/xpanse_lizards_image.jpg";
+import advancedMaterialsInterfacesImage from "../assets/advanced_materials_interfaces_image.jpg"
 import DOHInnovationChallengeImage from "../assets/DOH_innovation_challenge.png"
 
 // Sample news data - replace with your actual data
@@ -25,7 +26,7 @@ const newsItems = [
         id: 2,
         title: "Publication in Advanced Materials Interfaces",
         subtitle: "Study explores ion concentration polarization using experiments and molecular simulations",
-        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+        image: advancedMaterialsInterfacesImage,
         link: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/admi.202401018"
     },
     {
