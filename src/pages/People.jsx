@@ -165,13 +165,13 @@ const sections = [
             {
                 name: "Carlos Abril",
                 title: "COLLABORATOR - CLEVELAND CLINIC ABU DHABI",
-                description: "Develops cutting-edge therapeutic medical technologies.",
+                // description: "Develops cutting-edge therapeutic medical technologies.",
                 photo: CarlosAbrilImage
             },
             {
                 name: "Juan S. Barajas-Gamboa",
                 title: "COLLABORATOR - CLEVELAND CLINIC ABU DHABI",
-                description: "Develops cutting-edge therapeutic medical technologies.",
+                // description: "Develops cutting-edge therapeutic medical technologies.",
                 photo: JuanBarajasGamboaImage
             }
         ]
