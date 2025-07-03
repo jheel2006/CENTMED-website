@@ -26,8 +26,8 @@ const newsItems = [
         date: "May 05, 2025",
         image: advancedMaterialsInterfacesImage,
         link: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/admi.202401018",
-        excerpt: "CENTMED is proud to announce a new collaborative partnership with Cleveland Clinic Abu Dhabi. This strategic alliance will focus on developing next-generation cardiovascular devices tailored to address regional health challenges, combining CENTMED's engineering expertise with Cleveland Clinic's clinical excellence.",
-        category: "Research"
+        excerpt: "In a recent publication in Advanced Materials Interfaces, Dr. Rafael Song and collaborators combined experiments and molecular dynamics simulations to investigate ion concentration polarization in nanofluidic hydrogel membranes, revealing how ionic strength and membrane charge affect RNA and ion localization.",
+        category: "Publications"
     },
     {
         id: 3,

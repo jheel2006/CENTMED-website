@@ -270,47 +270,7 @@ body.home-page {
 }
 
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
 
-    .landing-content,
-    .split-section-content {
-        flex-direction: column;
-    }
-
-    .title-container,
-    .heart-animation-container,
-    .split-text-container,
-    .split-svg-container {
-        flex: 0 0 100%;
-        padding: 1rem;
-    }
-
-    .title-container h1 {
-        font-size: 2.5rem;
-        text-align: center;
-    }
-
-    .heart-animation-container,
-    .split-svg-container {
-        height: 40vh;
-    }
-
-    .split-text-container {
-        padding: 2rem;
-    }
-
-    .block-buttons {
-        flex-direction: column;
-        align-items: center;
-        /* Centers the stacked buttons on mobile */
-        gap: 0.75rem;
-    }
-
-    .section-button {
-        width: fit-content;
-    }
-}
 
 /* Add these styles to your Home.css file */
 
@@ -367,37 +327,6 @@ body.home-page {
     height: 100%;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .landing-wrapper {
-        width: 95%;
-        height: auto;
-        min-height: 80vh;
-        border-radius: 20px;
-    }
-
-    .landing-content {
-        padding: 1.5rem;
-        flex-direction: column;
-    }
-
-    .title-container {
-        margin-left: 0;
-        padding-right: 0;
-        align-items: center;
-        text-align: center;
-    }
-
-    .title-container .subtitle {
-        max-width: 100%;
-    }
-
-    .heart-animation-container {
-        height: 40vh;
-    }
-}
-
-/* Update these styles in your Home.css file */
 
 /* First, ensure the landing wrapper is properly sized and centered */
 .landing-wrapper {
@@ -411,11 +340,9 @@ body.home-page {
     position: relative;
     height: 82vh;
     display: flex;
-    /* Add this */
     align-items: center;
-    /* Add this */
     justify-content: center;
-    /* Add this */
+
 }
 
 /* Update landing-content to be vertically centered */
@@ -470,7 +397,6 @@ body.home-page {
 }
 
 
-/* Add these styles to your Home.css file to make section icons consistent */
 
 /* Common styling for all section icons, regardless of whether they are SVGs or images */
 .section-icon {
@@ -507,61 +433,9 @@ body.home-page {
     max-height: 350px;
 }
 
-/* Specific adjustments for responsive design */
-@media (max-width: 768px) {
-
-    .section-icon,
-    .split-svg-container svg {
-        max-width: 300px;
-        max-height: 250px;
-    }
-
-    .split-svg-container {
-        min-height: 250px;
-    }
-}
 
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .landing-wrapper {
-        min-width: auto;
-        /* Remove the min-width on mobile */
-        height: auto;
-        min-height: 80vh;
-        border-radius: 20px;
-    }
 
-    .landing-content {
-        padding: 1.5rem;
-        flex-direction: column;
-    }
-
-    .title-container {
-        margin-left: 0;
-        padding-right: 0;
-        align-items: center;
-        text-align: center;
-        height: auto;
-        /* Allow height to be determined by content */
-    }
-
-    .title-container h1 {
-        text-align: center;
-        font-size: 2.5rem;
-    }
-
-    .title-container .subtitle {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .heart-animation-container {
-        height: 40vh;
-    }
-}
-
-/* Add this to your Home.css file */
 
 /* News Carousel Styles */
 .news-carousel-container {
@@ -685,8 +559,55 @@ body.home-page {
     right: -60px;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 992px) {
+/* Specific adjustments for responsive design */
+@media (max-width: 768px) {
+
+    .section-icon,
+    .split-svg-container svg {
+        max-width: 300px;
+        max-height: 250px;
+    }
+
+    .split-svg-container {
+        min-height: 250px;
+    }
+
+    .landing-wrapper {
+        min-width: auto;
+        /* Remove the min-width on mobile */
+        height: auto;
+        min-height: 80vh;
+        border-radius: 20px;
+    }
+
+    .landing-content {
+        padding: 1.5rem;
+        flex-direction: column;
+    }
+
+    .title-container {
+        margin-left: 0;
+        padding-right: 0;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        /* Allow height to be determined by content */
+    }
+
+    .title-container h1 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .title-container .subtitle {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .heart-animation-container {
+        height: 40vh;
+    }
+
     .news-cards-container {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
@@ -704,9 +625,7 @@ body.home-page {
         display: none;
         /* Hide arrows on smaller screens, use native scrolling */
     }
-}
 
-@media (max-width: 768px) {
     .news-carousel-container {
         padding: 1rem 0.5rem;
     }
@@ -718,14 +637,77 @@ body.home-page {
     .news-card {
         min-width: 260px;
     }
-}
 
-@media (max-width: 576px) {
     .news-card-content {
         padding: 1rem;
     }
 
     .news-card-title {
         font-size: 1.1rem;
+    }
+
+    .landing-content,
+    .split-section-content {
+        flex-direction: column;
+    }
+
+    .title-container,
+    .heart-animation-container,
+    .split-text-container,
+    .split-svg-container {
+        flex: 0 0 100%;
+        padding: 1rem;
+    }
+
+    .title-container h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .heart-animation-container,
+    .split-svg-container {
+        height: 40vh;
+    }
+
+    .split-text-container {
+        padding: 2rem;
+    }
+
+    .block-buttons {
+        flex-direction: column;
+        align-items: center;
+        /* Centers the stacked buttons on mobile */
+        gap: 0.75rem;
+    }
+
+    .section-button {
+        width: fit-content;
+    }
+
+    .landing-wrapper {
+        width: 95%;
+        height: auto;
+        min-height: 80vh;
+        border-radius: 20px;
+    }
+
+    .landing-content {
+        padding: 1.5rem;
+        flex-direction: column;
+    }
+
+    .title-container {
+        margin-left: 0;
+        padding-right: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title-container .subtitle {
+        max-width: 100%;
+    }
+
+    .heart-animation-container {
+        height: 40vh;
     }
 }

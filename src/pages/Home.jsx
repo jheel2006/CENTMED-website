@@ -36,13 +36,13 @@ const newsItems = [
         image: DOHInnovationChallengeImage,
         link: "https://nyuad.nyu.edu/en/academics/divisions/engineering/engineering-awards-successes.html"
     },
-    {
-        id: 4,
-        title: "Research Collaboration with Cleveland Clinic Abu Dhabi",
-        subtitle: "New partnership focuses on cardiovascular device development",
-        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
-        link: "/news/cleveland-clinic-partnership"
-    },
+    // {
+    //     id: 4,
+    //     title: "Research Collaboration with Cleveland Clinic Abu Dhabi",
+    //     subtitle: "New partnership focuses on cardiovascular device development",
+    //     image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+    //     link: "/news/cleveland-clinic-partnership"
+    // },
 ];
 
 // News Carousel Component

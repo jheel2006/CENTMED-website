@@ -16,6 +16,7 @@ import SanjitMajhiImage from "../assets/SanjitMajhi_image.jpg";
 import HananMohammedImage from "../assets/HananMohammed_image.png";
 import PukarMaharjanImage from "../assets/PukarMaharjan_image.jpg";
 import VegaImage from "../assets/Vega_image.jpg";
+import AbdelHameedDabbourImage from "../assets/AbdelHameedDabbour_image.png";
 import PrimImage from "../assets/Prim_image.jpg";
 import AyoubGliaImage from "../assets/AyoubGlia_image.jpg";
 import WaelOthmanImage from "../assets/WaelOthman_image.jpg";
@@ -125,8 +126,8 @@ const sections = [
             {
                 name: "Abdel-Hameed Dabbour",
                 title: "RESEARCH STAFF",
-                description: "",
-                photo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+                description: "Abdel is a research professional with 10 years of experience in the field of medical devices, 5 of which with implantable devices. Abdel has worked on various devices, such as implantable brain sensors, devices used in ICUs and aortic stents. Abdel has a verifiable history of contributing directly to growth and expansion of several medical device companies in both industry and academia.",
+                photo: AbdelHameedDabbourImage
             },
             {
                 name: "Parima Phowarasoontorn",
@@ -219,7 +220,7 @@ const sections = [
             {
                 name: "Matthew Kroh",
                 title: "Advisory Board Member",
-                description: "Chief Medical Officer, Digestive Disease Institute, Cleveland Clinic Lerner College of Medicine, Cleveland, USA",
+                description: "Cleveland Clinic Lerner College of Medicine, Cleveland, USA",
             }
         ]
     }
