@@ -12,22 +12,25 @@ import groupPhoto from "../assets/GroupPhoto.jpg";
 import xpanseLizardImage from "../assets/xpanse_lizards_image.jpg";
 import advancedMaterialsInterfacesImage from "../assets/advanced_materials_interfaces_image.jpg"
 import DOHInnovationChallengeImage from "../assets/DOH_innovation_challenge.png"
+import expoOsakaImage from "../assets/expo_osaka_image.jpg";
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+
 
 // Sample news data - replace with your actual data
 const newsItems = [
     {
         id: 1,
-        title: "Brain Organoids + Lizard Tails + Biomimicry",
-        subtitle: "Dr. Rafael Song explores brain organoids, bioinspired materials, and the future of translational medicine.",
-        image: xpanseLizardImage,
-        link: "https://www.xpanse.world/insight/brain-organoids-lizard-tails-biomimicry"
-    },
-    {
-        id: 2,
         title: "Publication in Advanced Materials Interfaces",
         subtitle: "Study explores ion concentration polarization using experiments and molecular simulations",
         image: advancedMaterialsInterfacesImage,
         link: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/admi.202401018"
+    },
+    {
+        id: 2,
+        title: "Brain Organoids + Lizard Tails + Biomimicry",
+        subtitle: "Dr. Rafael Song explores brain organoids, bioinspired materials, and the future of translational medicine.",
+        image: xpanseLizardImage,
+        link: "https://www.xpanse.world/insight/brain-organoids-lizard-tails-biomimicry"
     },
     {
         id: 3,
@@ -36,13 +39,13 @@ const newsItems = [
         image: DOHInnovationChallengeImage,
         link: "https://nyuad.nyu.edu/en/academics/divisions/engineering/engineering-awards-successes.html"
     },
-    // {
-    //     id: 4,
-    //     title: "Research Collaboration with Cleveland Clinic Abu Dhabi",
-    //     subtitle: "New partnership focuses on cardiovascular device development",
-    //     image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
-    //     link: "/news/cleveland-clinic-partnership"
-    // },
+    {
+        id: 4,
+        title: "CENTMED Showcases at Expo 2025 Osaka",
+        subtitle: "Spotlight on wearable diagnostics and smart surgical tools at the UAE Pavilion",
+        image: expoOsakaImage,
+        link: "https://www.linkedin.com/feed/update/urn:li:activity:7345804567206322177"
+    }
 ];
 
 // News Carousel Component
@@ -58,7 +61,9 @@ const NewsCarousel = () => {
         setCurrentIndex(prevIndex => Math.min(maxIndex, prevIndex + 1));
     };
 
-    const visibleNews = newsItems.slice(currentIndex, currentIndex + 3);
+    const reversedNews = newsItems.slice().reverse();
+    const visibleNews = reversedNews.slice(currentIndex, currentIndex + 3);
+
 
     return (
         <div className="news-carousel-container">

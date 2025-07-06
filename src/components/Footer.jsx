@@ -4,7 +4,7 @@ import './Footer.css';
 import CENTMEDLogo from '../assets/CENTMED_logo_white.png';
 import NYUADLogo from '../assets/NYUAD_logo_white.png';
 import { Link } from 'react-router-dom';
-import { Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Mail, Instagram, Twitter, Linkedin } from 'lucide-react';
 
 const Footer = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -69,6 +69,9 @@ const Footer = () => {
                     </div>
 
                     <div className="social-icons">
+                        <a href="mailto:nyuad.centmed@nyu.edu" className="social-icon">
+                            <Mail color="white" size={29} />
+                        </a>
                         <a href="https://www.instagram.com/centmed_nyuad/" target="_blank" rel="noopener noreferrer" className="social-icon">
                             <Instagram color="white" size={26} />
                         </a>
