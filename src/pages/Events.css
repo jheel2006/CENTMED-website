@@ -88,17 +88,195 @@
     /* Adjust this value if needed */
 }
 
+/* Mobile Responsive Media Queries - Add these to your Events.css file */
 
+/* Tablet styles (768px and below) */
+@media screen and (max-width: 768px) {
+    .events-container {
+        padding: 20px;
+    }
 
-@media (max-width: 600px) {
+    .events-title {
+        font-size: 2.5rem;
+    }
+
     .event-card {
+        width: 95%;
+        min-width: unset;
+        max-width: 100%;
+        padding: 20px;
         flex-direction: column;
-        align-items: flex-start;
+        text-align: center;
+    }
+
+    .event-info {
+        margin-bottom: 20px;
+    }
+
+    .event-title {
+        font-size: 1.4rem;
+    }
+
+    .event-category {
+        font-size: 1rem;
+    }
+
+    .event-speaker,
+    .event-date,
+    .event-university {
+        font-size: 0.95rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 8px 0;
     }
 
     .event-image {
         width: 100%;
-        height: auto;
-        margin: 10px 0 0;
+        height: 200px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/* Mobile styles (480px and below) */
+@media screen and (max-width: 480px) {
+
+
+    .events-title::after {
+        width: 60px;
+        height: 3px;
+    }
+
+    .events-list {
+        gap: 15px;
+    }
+
+    .event-card {
+        width: 100%;
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    .event-info {
+        margin-bottom: 15px;
+    }
+
+    .event-category {
+        font-size: 0.9rem;
+    }
+
+    .event-title {
+        font-size: 1.2rem;
+        margin: 8px 0;
+        line-height: 1.3;
+    }
+
+    .event-speaker,
+    .event-date,
+    .event-university {
+        font-size: 0.9rem;
+        margin: 6px 0;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .event-speaker svg,
+    .event-date svg,
+    .event-university svg {
+        margin-right: 8px;
+        flex-shrink: 0;
+    }
+
+    .event-image {
+        height: 180px;
+        border-radius: 8px;
+    }
+}
+
+/* Extra small mobile styles (360px and below) */
+@media screen and (max-width: 360px) {
+    .events-container {
+        padding: 10px;
+    }
+
+    .events-title {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .events-title::after {
+        width: 50px;
+        height: 2px;
+    }
+
+    .events-list {
+        gap: 12px;
+    }
+
+    .event-card {
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    .event-info {
+        margin-bottom: 12px;
+    }
+
+    .event-category {
+        font-size: 0.8rem;
+    }
+
+    .event-title {
+        font-size: 1.1rem;
+        margin: 6px 0;
+        line-height: 1.2;
+    }
+
+    .event-speaker,
+    .event-date,
+    .event-university {
+        font-size: 0.8rem;
+        margin: 5px 0;
+    }
+
+    .event-speaker svg,
+    .event-date svg,
+    .event-university svg {
+        width: 18px;
+        height: 18px;
+        margin-right: 6px;
+    }
+
+    .event-image {
+        height: 150px;
+        border-radius: 6px;
+    }
+}
+
+/* Landscape mobile orientation */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .event-card {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .event-info {
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+
+    .event-speaker,
+    .event-date,
+    .event-university {
+        justify-content: flex-start;
+    }
+
+    .event-image {
+        width: 40%;
+        height: 160px;
+        margin-left: 15px;
+        margin-top: 0;
     }
 }

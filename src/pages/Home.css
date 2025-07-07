@@ -561,13 +561,6 @@ body.home-page {
 
 /* Specific adjustments for responsive design */
 @media (max-width: 768px) {
-
-    .section-icon,
-    .split-svg-container svg {
-        max-width: 300px;
-        max-height: 250px;
-    }
-
     .split-svg-container {
         min-height: 250px;
     }
@@ -585,6 +578,11 @@ body.home-page {
         flex-direction: column;
     }
 
+
+    .landing-section {
+        height: 130vh;
+    }
+
     .title-container {
         margin-left: 0;
         padding-right: 0;
@@ -596,16 +594,24 @@ body.home-page {
 
     .title-container h1 {
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .title-container .subtitle {
+        font-size: 18px;
         max-width: 100%;
         text-align: center;
     }
 
     .heart-animation-container {
         height: 40vh;
+    }
+
+
+    .block-heading {
+        font-size: 2.6rem;
+        text-align: center;
+        margin-top: 0;
     }
 
     .news-cards-container {
@@ -672,6 +678,7 @@ body.home-page {
     .split-text-container {
         padding: 2rem;
     }
+
 
     .block-buttons {
         flex-direction: column;

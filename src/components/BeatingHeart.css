@@ -39,3 +39,9 @@
     overflow: visible;
     opacity: 0.9;
 }
+
+@media (max-width: 768px) {
+    .heart-svg-wrapper {
+        padding-right: 0;
+    }
+}

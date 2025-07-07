@@ -127,8 +127,7 @@
     }
 
     .footer-links {
-        flex-direction: column;
-        gap: 0.5rem;
+        display: none;
     }
 
     .footer-bottom {
